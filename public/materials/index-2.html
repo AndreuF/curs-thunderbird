@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107) -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="ca"><!--<![endif]--><!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Aplicacions ofimàtiques</title>
+
+<!-- <meta name="title" content=""> -->
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Aplicacions ofimàtiques">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="/materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+
+	<link rel="apple-touch-icon" href="/materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="./a2 continguts_files/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="./a2 continguts_files/jquery-ui.css">
+
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="./a2 continguts_files/modernizr-1.7.min.js"></script>
+	<script src="./a2 continguts_files/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="./a2 continguts_files/build.js" type="text/javascript"></script>
+<script src="./a2 continguts_files/ca.js" type="text/javascript"></script>
+<link rel="stylesheet" media="all" type="text/css" href="css/cssff6e.css?s=all&amp;t=estatic" />
+<link rel="stylesheet" media="screen" type="text/css" href="css/css6139.css?t=estatic" />
+<link rel="stylesheet" media="print" type="text/css" href="css/css6f71.css?s=print&amp;t=estatic" />
+<link rel="stylesheet" media="all" type="text/css" href="css/mystyle.css" />
+<link rel="shortcut icon" href="ico/favicon.ico" />
+
+</head>
+
+<body class="style-newspaper" style="background-position: 0px 0px;">
+
+
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+
+   <div id="upbutton" class="upbutton" style="display: none;"><img src="./a2 continguts_files/uparrow.png" alt="Pujar a l&#39;inici de pàgina"></div>
+
+
+   <div id="settings" class="hidden" style="left: 0px;">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper active"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 40%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 40%;"></a></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 50%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 50%;"></a></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" checked="checked"><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" checked="checked"><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment"><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" checked="checked"><label for="text-hyphen">Partició sil·làbica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al menú de navegació</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la pàgina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la pàgina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l'ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegació</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l'índex general</li>
+    <li><span class="shortcut">t</span>: Anar a l'inici de pàgina</li>
+    <li><span class="shortcut">b</span>: Anar al final de pàgina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la pàgina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la pàgina</li>
+    <li><span class="shortcut">h</span>: Anar a la pàgina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la pàgina següent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet text-normal text-left medium" style="padding-bottom: 170px; counter-reset: counth1 0;">
+
+			 <div class="headermain">
+		 		<!--<a href="http://ateneu.xtec.cat/wikiform/wikiexport"><span class="logoateneu"></span></a>-->
+		 		<div class="titol">UF2. Gestió de correu i agenda electrònica</div>
+		 		<div class="subtitol"></div>
+		 	</div>
+
+		 	<div class="navega">
+		 		<div id="navcontainer">
+		 			<ul id="navlist">
+		 				<li class="nodisc"><a href="index-2.html">Pt. 1</a></li>
+		 				<li class="nodisc"><a href="index-3.html">Pt. 2</a></li>
+
+		 			</ul>
+		 		</div>
+		 	</div>
+        <h1>Pt. 1 - Ges­tió de cor­reu i agenda elec­trò­nica</h1>
+
+<p>
+El cor­reu elec­trò­nic és un sis­tema cada dia més estès que per­met enviar infor­ma­ció a un o diver­sos des­ti­na­ta­ris de qual­se­vol indret del món per mitjà d’Inter­net. Aquest sis­tema és l’equi­va­lent del cor­reu postal tra­di­ci­o­nal, però en l’àmbit de les comu­ni­ca­ci­ons elec­trò­ni­ques, amb avan­tat­ges evi­dents quant a temps, espai, volum, faci­li­tat i gra­tu­ï­tat del ser­vei. No sola­ment per­met la comu­ni­ca­ció de mis­sat­ges de text entre usu­a­ris, sinó que també pos­si­bi­lita adjun­tar arxius, foto­gra­fies, enlla­ços, etc.
+</p>
+
+<p>
+</p><div class="iocfigurec">
+<ul>
+<li>
+<img src="./a2 continguts_files/gadm07u1_23.png" class="imgB" title="Els missatges de correu volen figuradament per Internet entre els ordinadors." alt="Els missatges de correu volen figuradament per Internet entre els ordinadors."></li><li><small>Els mis­sat­ges de cor­reu volen figu­ra­da­ment per Inter­net entre els ordi­na­dors.</small></li>
+</ul></div>
+
+<p></p>
+
+<p>
+El cre­a­dor del cor­reu elec­trò­nic fou Ray Tom­lin­son, el 1971. Ray va triar l’arrova (@) per divi­dir les parts del cor­reu, ja que no exis­tia en cap nom ni cognom.
+</p>
+
+<p>
+No sola­ment ha evo­lu­ci­o­nat el cor­reu. També les agen­des ho han fet d’una manera espec­ta­cu­lar. Ja no cal recór­rer a papers ni a un únic empla­ça­ment. Cada dia més dis­po­si­tius mòbils són com­pa­ti­bles amb les agen­des elec­trò­ni­ques. Tot ple­gat fa més sen­zi­lla la tasca d’orga­nit­zar, comu­ni­car i rela­ci­o­nar-nos amb els nos­tres con­tac­tes.
+</p>
+
+<h2>Pro­ve­ï­dors, ser­vi­dors i ges­tors de comp­tes de cor­reu elec­trò­nic. Domi­nis. Pro­to­cols<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+El cor­reu elec­trò­nic és un ser­vei que ofe­reix Inter­net i que per­met la comu­ni­ca­ció entre diver­sos usu­a­ris d’una manera asín­crona (no cal que el que envia i el que rep esti­guin con­nec­tats alhora).
+</p>
+
+<p>
+Per poder enviar un mis­satge de cor­reu elec­trò­nic neces­si­tem una adreça. Cada adreça elec­trò­nica és única i per­tany a una per­sona o enti­tat.
+</p>
+
+<p>
+</p><div class="iocfigurec">
+<ul>
+<li>
+<img src="./a2 continguts_files/gadm07u1_24.png" class="imgB" title="L&#39;ús del símbol arrova en la programació va començar l&#39;any 1971, quan l&#39;informàtic Ray Tomlinson va necessitar alguna cosa per separar l&#39;usuari del servidor." alt="L&#39;ús del símbol arrova en la programació va començar l&#39;any 1971, quan l&#39;informàtic Ray Tomlinson va necessitar alguna cosa per separar l&#39;usuari del servidor."></li><li><small>L'ús del sím­bol arrova en la pro­gra­ma­ció va comen­çar l'any 1971, quan l'infor­mà­tic Ray Tom­lin­son va neces­si­tar alguna cosa per sepa­rar l'usu­ari del ser­vi­dor.</small></li>
+</ul></div>
+
+<p></p>
+
+<p>
+Una adreça de cor­reu elec­trò­nic, “jsanchez@​ioc.​cat”, està for­mada per qua­tre ele­ments:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom d’usu­ari (jsanc­hez)</div>
+</li>
+<li class="level1"><div class="li"> Sím­bol arrova (@) </div>
+</li>
+<li class="level1"><div class="li"> Ser­vi­dor (ioc)</div>
+</li>
+<li class="level1"><div class="li"> Domini (cat)</div>
+</li>
+</ul>
+
+<p>
+El sím­bol @ s’obté en fer clic simul­tà­ni­a­ment a les tecles ALT + 2, tant en Win­dows com en Linux i Mac.
+</p>
+
+<p>
+El nom d’usu­ari es pot per­so­na­lit­zar i pot con­te­nir lle­tres, xifres i alguns sig­nes. És impor­tant esco­llir amb cura el nom d’usu­ari, ja que for­marà part de la vos­tra iden­ti­tat digi­tal i per mitjà d’aquest nom rebreu i envi­a­reu tots els cor­reus.
+</p>
+
+<p>
+L’arrova no can­via mai, sem­pre és el sepa­ra­dor entre el nom d’usu­ari i el domini. Aquest dar­rer és el nom del pro­ve­ï­dor que dóna el ser­vei de cor­reu; per tant, l’usu­ari no el pot can­viar.
+</p>
+
+<p>
+Per acon­se­guir una adreça de cor­reu, neces­si­tem un pro­ve­ï­dor, que pot ser de paga­ment o gra­tuït. Un cop tenim l’adreça, hi acce­di­rem mit­jan­çant un usu­ari i una con­tra­se­nya. Els pro­ve­ï­dors gra­tu­ïts són els més uti­lit­zats i tenen unes carac­te­rís­ti­ques espe­cí­fi­ques: inclo­uen publi­ci­tat, tant a la inter­fí­cie com al cos del mis­satge, i no podem modi­fi­car el nom del pro­ve­ï­dor a l’adreça. És a dir, sem­pre seran del tipus usuari@​proveidor.​com.
+Alguns exem­ples de pro­ve­ï­dors gra­tu­ïts són Gmail de Goo­gle, Hot­mail de Micro­soft, Yahoo! o Terra de Tele­fó­nica. Quant als pro­ve­ï­dors de paga­ment, per­me­ten esco­llir la capa­ci­tat de la bús­tia i el nom del domini. El paga­ment es fa pel domini i, en alguns casos, també per la capa­ci­tat de la bús­tia.
+</p>
+
+<p>
+A més del pro­ve­ï­dor, el cor­reu elec­trò­nic es dife­ren­cia segons el ser­vei uti­lit­zat:
+</p>
+<ul>
+<li class="level1"><div class="li"> per mitjà d’un nave­ga­dor web, o</div>
+</li>
+<li class="level1"><div class="li"> per mitjà d’un cli­ent (pro­gra­mari).</div>
+</li>
+</ul>
+
+<p>
+Els cor­reus web (<em>web­mail</em>) per­me­ten enviar i rebre mis­sat­ges mit­jan­çant una pàgina web, de manera que l’únic que neces­si­tem és un nave­ga­dor web qual­se­vol. L’avan­tatge prin­ci­pal d’aquest sis­tema és que per­met con­sul­tar el cor­reu en qual­se­vol ordi­na­dor, però l’incon­ve­ni­ent és que les fun­ci­ons es limi­ten a les que ofe­reix la pàgina web del nos­tre pro­ve­ï­dor. No obs­tant això, cal asse­nya­lar que cada cop dis­po­sen de més ser­veis.
+</p>
+
+<p>
+Els cli­ents de cor­reu, en canvi, són pro­gra­mes que s’ins­tal·len al nos­tre ordi­na­dor i que ens per­me­ten ges­ti­o­nar el cor­reu i els con­tac­tes, a més de l’agenda. És el cas de l’Out­look de Micro­soft, del Thun­der­bird de Mozi­lla o del Lotus Notes.
+</p>
+
+<p>
+Resu­mint, per poder enviar mis­sat­ges neces­si­ta­reu:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una adreça en un ser­vi­dor de cor­reu (d’un pro­ve­ï­dor gra­tuït o de paga­ment).</div>
+</li>
+<li class="level1"><div class="li"> Un mitjà per com­pon­dre els mis­sat­ges: cor­reu web o una apli­ca­ció de cor­reu. </div>
+</li>
+</ul>
+
+<p>
+Un mis­satge de cor­reu elec­trò­nic consta dels ele­ments bàsics següents (vegeu <span class="figref"><a href="#Figure19"><span>figura</span>.1</a></span>):
+</p>
+<ul>
+<li class="level1"><div class="li"> Des­ti­na­tari. És l’adreça o adre­ces dels qui rebran el mis­satge.</div>
+</li>
+<li class="level1"><div class="li"> Remi­tent. És l’adreça de qui envia el mis­satge.</div>
+</li>
+<li class="level1"><div class="li"> CC. Els des­ti­na­ta­ris que es posin aquí rebran còpia del cor­reu.</div>
+</li>
+<li class="level1"><div class="li"> Cco. Aquests des­ti­na­ta­ris rebran còpia del cor­reu, però no ho sabrà ningú. És el que s’ano­mena <em>còpia oculta</em>.</div>
+</li>
+<li class="level1"><div class="li"> Assumpte. És el títol del mis­satge. Quan l’usu­ari el rebrà, és el que veurà del mis­satge per deci­dir si l’obre o no.</div>
+</li>
+<li class="level1"><div class="li"> Cos. És el mis­satge en si mateix. Molts ser­vi­dors de cor­reu per­me­ten incloure-hi imat­ges, incrus­tar-hi vídeos, ani­ma­ci­ons, etc.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure19"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Ele­ments del cor­reu
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_25.png" alt="" style=""></figure>
+</div>
+<p>
+El cor­reu elec­trò­nic és un mitjà fia­ble de comu­ni­ca­ció. Si el compte de cor­reu on s’envia el mis­satge no exis­teix, té algun pro­blema o està ple arri­barà un mis­satge que informa que el des­ti­na­tari no ha rebut el mis­satge.
+</p>
+<ul>
+<li class="level1"><div class="li"> Les adre­ces de cor­reu no dife­ren­cien entre majús­cu­les i minús­cu­les, de manera que és el mateix enviar un cor­reu a MaRiA@​IoC.​CaT que a maria@​ioc.​cat</div>
+</li>
+<li class="level2"><div class="li"> Fre­qüent­ment, els pro­gra­mes tenen la fun­ció de desa­ment auto­mà­tic quan s’està escri­vint un mis­satge de cor­reu elec­trò­nic, de manera que la infor­ma­ció no es perd si hi ha una apa­gada, per exem­ple.</div>
+</li>
+<li class="level2"><div class="li"> Tot i que el mis­satge s’envia al moment, pot tri­gar a ser rebut o vist pel des­ti­na­tari, de manera que no s’obtin­drà res­posta a l’ins­tant.</div>
+</li>
+<li class="level2"><div class="li"> Un cop envi­ats, els mis­sat­ges s’emma­gat­ze­men a la car­peta <em>Envi­ats</em>, de manera que si volem enviar el mateix mis­satge, no cal que el tor­nem a escriure. </div>
+</li>
+</ul>
+
+</div>
+
+<h3>Pro­to­cols del ser­vei de cor­reu elec­trò­nic<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+El ser­vei de cor­reu elec­trò­nic per­met inter­can­viar mis­sat­ges entre usu­a­ris per mitjà d’ordi­na­dors inter­con­nec­tats, però per fer aquesta comu­ni­ca­ció cal dis­po­sar d’uns ele­ments i pro­to­cols que ho faci­li­tin.
+</p>
+
+<p>
+El compte de cor­reu elec­trò­nic, com també la manera d’esta­blir la comu­ni­ca­ció entre l’emis­sor i el recep­tor de cor­reu, ha de seguir unes nor­mes espe­cí­fi­ques que estan mar­ca­des pel que s’ano­mena <strong>pro­to­cols d’Inter­net</strong>.
+</p>
+
+<p>
+Els pro­to­cols d’Inter­net són un con­junt de regles de comu­ni­ca­ció de xarxa en què es basa Inter­net i que faci­li­ten l’inter­canvi de dades entre ordi­na­dors con­nec­tats en xarxa, i també per­me­ten la comu­ni­ca­ció i trans­mis­sió de cor­reu elec­trò­nic entre usu­a­ris inde­pen­dent­ment del sis­tema ope­ra­tiu i del cli­ent de cor­reu que uti­lit­zin.
+</p>
+
+<p>
+Per poder enviar o rebre un cor­reu elec­trò­nic neces­si­tem dis­po­sar d’un compte de cor­reu en una màquina ano­me­nada <em>ser­vi­dor de cor­reu</em>. És habi­tual que per fer aquesta acció els usu­a­ris esti­guin con­nec­tats a Inter­net, tot i que de vega­des no és impres­cin­di­ble.
+</p>
+
+</div>
+
+<h4>Ser­vi­dor de cor­reu<span class="star" name="star" style="display: none;"></span></h4>
+<div class="level4">
+
+<p>
+El ser­vi­dor de cor­reu és una apli­ca­ció infor­mà­tica que per­met l’envi­a­ment de mis­sat­ges de cor­reu elec­trò­nic entre usu­a­ris inde­pen­dent­ment de la xarxa que uti­lit­zin. És el res­pon­sa­ble de l’enca­mi­na­ment del cor­reu entre els dife­rents sis­te­mes.
+</p>
+
+<p>
+El cor­reu elec­trò­nic té una estruc­tura que des­criu­ríem com de cli­ent ser­vi­dor, de manera que en l’equip ser­vi­dor s’allot­ja­ran els comp­tes de cor­reu dels usu­a­ris i en els cli­ents de cor­reu es ges­ti­o­narà la bai­xada de mis­sat­ges.
+</p>
+
+</div>
+
+<h4>Cli­ent de cor­reu<span class="star" name="star" style="display: none;"></span></h4>
+<div class="level4">
+
+<p>
+El cli­ent de cor­reu són apli­ca­ci­ons que per­me­ten rela­ci­o­nar els usu­a­ris amb les seves bús­ties de cor­reu i els pos­si­bi­li­ten bai­xar i ges­ti­o­nar mis­sat­ges de cor­reu uti­lit­zant uns pro­to­cols deter­mi­nats (POP3 i IMAP).
+</p>
+
+<p>
+Per poder llan­çar el cli­ent de cor­reu elec­trò­nic, també s’ha de tenir infor­ma­ció sobre el pro­ve­ï­dor de ser­veis d’Inter­net (ISP) de manera que es pugui con­fi­gu­rar el cli­ent ade­qua­da­ment.
+</p>
+
+</div>
+
+<h4>ISP<span class="star" name="star" style="display: none;"></span></h4>
+<div class="level4">
+
+<p>
+ISP (<em>Inter­net ser­vice pro­vi­der</em>, ‘pro­ve­ï­dor d’Inter­net’) són empre­ses dedi­ca­des a con­nec­tar a Inter­net els usu­a­ris o les dife­rents xar­xes que tin­guin, i pro­veir el man­te­ni­ment neces­sari per­què l’accés fun­ci­oni cor­rec­ta­ment. També ofe­rei­xen ser­veis rela­ci­o­nats, com allot­ja­ment web o regis­tre de domi­nis.
+</p>
+
+<p>
+Així, per ges­ti­o­nar cor­reu elec­trò­nic neces­si­tem saber quins pro­to­cols de cor­reu elec­trò­nic hi ha. Podríem dir que el ser­vi­dor de cor­reu està for­mat per dos pro­to­cols, l’SMTP i el POP/IMAP. Vegem-ho amb més detall:
+</p>
+<ul>
+<li class="level1"><div class="li"> El <strong>pro­to­col SMTP</strong> (<em>sim­ple mail trans­fer pro­to­col</em>, ‘pro­to­col sim­ple de trans­fe­rèn­cia de cor­reu’), que és l’estàn­dard d’Inter­net per a l’inter­canvi de cor­reu elec­trò­nic. Té com a fun­ció la trans­mis­sió del cor­reu que surt de la màquina de l’usu­ari remi­tent fins al ser­vi­dor que emma­gat­zema els mis­sat­ges dels usu­a­ris des­ti­na­ta­ris.</div>
+</li>
+</ul>
+
+<p>
+És impor­tant dotar aquest pro­to­col d’auten­ti­ca­ció per estal­viar l’envi­a­ment i la recep­ció de cor­reu no vol­gut.
+</p>
+<ul>
+<li class="level1"><div class="li"> El <strong>pro­to­col POP</strong> (<em>post office pro­to­col</em>, ‘pro­to­col d’ofi­cina de cor­reus’) fa refe­rèn­cia al tipus de ser­vi­dor que s’uti­lit­zarà per rebre cor­reu. Per­met la ges­tió, l’accés i la trans­fe­rèn­cia de mis­sat­ges de cor­reu elec­trò­nic entre el ser­vi­dor de cor­reu i l’usu­ari. A dife­rèn­cia del pro­to­col SMTP, el POP s’uti­litza per a la bai­xada de cor­reu. L’ori­gen del pro­to­col POP està deter­mi­nat per la neces­si­tat de molts usu­a­ris de lle­gir el cor­reu con­nec­tant-se pun­tu­al­ment a Inter­net; així, l’usu­ari es con­necta al seu ser­vi­dor de cor­reu i, uti­lit­zant un pro­grama cli­ent, l’usu­ari baixa els mis­sat­ges i des­prés es des­con­necta del ser­vi­dor. Els aven­ços rea­lit­zats amb aquest pro­to­col fan que actu­al­ment es parli de la ver­sió POP3.</div>
+</li>
+<li class="level1"><div class="li"> El <strong>pro­to­col IMAP</strong> (<em>Inter­net mes­sage access pro­to­col</em>, ‘pro­to­col d’accés a mis­sat­ges d’Inter­net’) per­met als cli­ents de cor­reu elec­trò­nic acce­dir als mis­sat­ges emma­gat­ze­mats en els ser­vi­dors de cor­reu des de qual­se­vol màquina amb accés a Inter­net. Nor­mal­ment, uti­lit­zen aquest pro­to­col els ser­vi­dors i cli­ents de cor­reu web que per­me­ten a l’usu­ari ges­ti­o­nar el cor­reu des de qual­se­vol màquina amb con­ne­xió a Inter­net, encara que també és pos­si­ble dur a terme aquesta acció fent ús d’un cli­ent POP3 i bai­xant el cor­reu a una màquina local. L’IMAP es dife­ren­cia del POP en el fet que els cor­reus elec­trò­nics dels ser­vi­dors IMAP estan emma­gat­ze­mats en el ser­vi­dor i s’hi que­den fins i tot si es baixa el cor­reu elec­trò­nic, men­tre que el cor­reu POP baixa els mis­sat­ges per al seu cli­ent de cor­reu elec­trò­nic direc­ta­ment i no roma­nen en el ser­vi­dor.</div>
+</li>
+</ul>
+
+<p>
+El pro­cés de trans­mis­sió de cor­reu elec­trò­nic es pot veure en la <span class="figref"><a href="#Figure20"><span>figura</span>.2</a></span>.
+</p>
+<div class="iocfigure"><a name="Figure20"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Esquema del pro­cés de trans­mis­sió de cor­reu elec­trò­nic
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_26-01.png" alt="" style=""></figure>
+</div>
+<p>
+
+</p>
+
+<p>
+En resum, quan l’usu­ari remi­tent envia un mis­satge, aquest es diri­geix al seu ser­vi­dor de cor­reu mit­jan­çant el pro­to­col SMTP; des d’aquest s’envia al ser­vi­dor de cor­reu de l’usu­ari des­ti­na­tari i, final­ment, aquest baixa el cor­reu a la bús­tia en la màquina local fent ser­vir el pro­to­col POP/IMAP.
+</p>
+
+<p>
+Així, el pro­to­col SMTP s’uti­litza nor­mal­ment per enviar i rebre mis­sat­ges i el pro­to­col POP/IMAP per­met als usu­a­ris bai­xar els mis­sat­ges. Per aquest motiu, s’ha d’espe­ci­fi­car tant el ser­vi­dor SMTP com el ser­vi­dor POP o IMAP quan es con­fi­gura l’apli­ca­ció o ges­tor de cor­reu elec­trò­nic.
+</p>
+
+<p>
+A més, i és impor­tant de tenir-ho en compte, aquests pro­to­cols no ofe­rei­xen prou segu­re­tat en el pro­cés de trans­mis­sió de mis­sat­ges i poden que­dar al des­co­bert con­tra­se­nyes i altres infor­ma­ci­ons. Per aquest motiu, se sol afe­gir una capa SSL que per­met un mètode de xifratge que poden imple­men­tar tant el ser­vi­dor de cor­reu com el cli­ent.
+</p>
+
+</div>
+
+<h4>SSL<span class="star" name="star" style="display: none;"></span></h4>
+<div class="level4">
+
+<p>
+SSL (<em>secure sockets layer</em>, ‘pro­to­col de capa de con­ne­xió segura’) és un pro­to­col crip­to­grà­fic que per­met una con­ne­xió segura per a una xarxa, comu­na­ment Inter­net.
+</p>
+
+</div>
+
+<h2>Tipus de comp­tes de cor­reu elec­trò­nic<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+Depe­nent del tipus de con­ne­xió, podem dife­ren­ciar entre tipus de comp­tes POP o IMAP.
+</p>
+
+<p>
+Una apli­ca­ció de cor­reu (com el Thun­der­bird) uti­litza aquests pro­to­cols per bai­xar al nos­tre equip el cor­reu que tenim pen­dent en el ser­vi­dor (cas del POP) o visu­a­lit­zar els cor­reus que hi ha en el ser­vi­dor (cas de l’IMAP). Aquests pro­to­cols no ser­vei­xen per enviar mis­sat­ges.
+</p>
+
+<p>
+El POP (pro­to­col d’ofi­cina de cor­reus) és el pro­to­col que per­met rebre cor­reus elec­trò­nics des del ser­vi­dor. La ver­sió actual és la POP3, i està molt estesa a tots els ser­vi­dors de cor­reu.
+</p>
+
+<p>
+IMAP (pro­to­col d’accés a mis­sat­ges d’Inter­net) també és un pro­to­col que per­met veure cor­reus elec­trò­nics des del ser­vi­dor, però fun­ci­ona de manera dife­rent, ja que no baixa cap infor­ma­ció a la nos­tra màquina.
+</p>
+
+<p>
+En la <span class="tabref"><a href="#Table2"><span>taula</span>.1</a></span> podeu veure les dife­rèn­cies, els avan­tat­ges i els des­a­van­tat­ges entre el cor­reu web i el POP.
+</p>
+<div class="ioctable ">
+<div class="titletable" style="width: 892px; max-width: 100%;"><a name="Table2"><span>Taula: </span></a>Dife­rèn­cies entre el cor­reu web i el POP</div>
+<div class="table"><table class="inline">
+	<tbody><tr class="row0 borderth">
+		<th class="col0 leftalign"> POP  </th><th class="col1 leftalign"> Web (pro­to­col IMAP)  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Es pot veure el cor­reu sense estar con­nec­tat a Inter­net si prè­vi­a­ment s’ha bai­xat a l’ordi­na­dor.  </td><td class="col1 leftalign"> Només es poden veure els cor­reus quan s’està con­nec­tat a Inter­net, ja que sem­pre són en el ser­vi­dor.  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Els arxius adjunts s’obren més de pressa, ja que es desen al nos­tre equip amb els cor­reus. 	</td><td class="col1 leftalign"> Els arxius adjunts no es bai­xen (si no ho volem) a la nos­tra màquina, cosa que evita pos­si­bles infec­ci­ons.  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> El límit d’arxius és el del vos­tre disc dur, ja que els cor­reus s’esbor­ren del ser­vi­dor un cop bai­xats (tret que s’espe­ci­fi­qui el con­trari).  </td><td class="col1 leftalign"> La limi­ta­ció depèn del ser­vi­dor de cor­reu.  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> En cas d’haver-hi un pro­blema amb el nos­tre ordi­na­dor, per­dríem tots els cor­reus.  </td><td class="col1 leftalign"> Es fan còpies de segu­re­tat peri­ò­di­ques, i la pos­si­bi­li­tat de per­dre cor­reus és molt petita.  </td>
+	</tr>
+</tbody></table></div>
+</div>
+</div>
+
+<h3>Reco­ma­na­ci­ons per crear un nou compte de cor­reu<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+A l’hora de crear un nou compte de cor­reu, heu de con­si­de­rar un seguit de reco­ma­na­ci­ons, quant al nom de l’usu­ari i la con­tra­se­nya (<em>password</em>).
+</p>
+
+<p>
+<strong>1. El nom d’usu­ari</strong>
+</p>
+
+<p>
+El nom d’usu­ari ha de ser ori­gi­nal. Si esco­llim un nom comú segu­ra­ment que una altra per­sona ja l’ha enre­gis­trat i no es podrà uti­lit­zar. En ser­veis com­par­tits amb molts usu­a­ris, com Hot­mail, Gmail o Yahoo, el nom d’usu­ari és el que dife­ren­cia els habi­tants del lloc.
+</p>
+
+<p>
+Per a la ID es poden fer ser­vir lle­tres i nom­bres. Si, per exem­ple, hi ha altres usu­a­ris “jsanc­hez” es pot afe­gir una data “jsanc­hez1197”. Per això és impor­tant tenir pen­sa­des dife­rents opci­ons per al nom del nos­tre compte abans de comen­çar.
+</p>
+
+<p>
+<strong>2. La con­tra­se­nya</strong>
+</p>
+
+<p>
+La con­tra­se­nya o paraula clau pot estar for­mada per lle­tres o una com­bi­na­ció de lle­tres i nom­bres; en qual­se­vol cas, no hi pot haver menys de sis caràc­ters. La con­tra­se­nya és una cre­a­ció prò­pia, secreta i con­fi­den­cial. És com el número d’accés al compte ban­cari o el PIN del telè­fon mòbil: cap per­sona no la pot conèi­xer; si algú la coneix, podrà acce­dir als nos­tres mis­sat­ges pri­vats o enviar cor­reus a altres per­so­nes fent ser­vir la nos­tra iden­ti­tat.
+</p>
+
+</div>
+
+<h2>Entorns de tre­ball: con­fi­gu­ra­ció i per­so­na­lit­za­ció<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+La majo­ria de ges­tors de cor­reu POP3 es poden bai­xar del por­tal web cor­res­po­nent i des­prés exe­cu­tar en el nos­tre ordi­na­dor per­so­nal seguint els pas­sos de l’assis­tent d’ins­tal·lació.
+</p>
+
+<p>
+Per exem­ple, si pro­vem d’ins­tal·lar el ges­tor de cor­reu Mozi­lla Thun­der­bird (<a href="http://www.mozilla-europe.org/es/products/thunderbird/" class="urlextern" title="http://www.mozilla-europe.org/es/products/thunderbird/" rel="nofollow">http://​www.​mozilla-europe.​org/​es/​products/​thunderbird/​</a>), que, segons la ver­sió, té una mida apro­xi­mada de 6,3 <acronym title="Megabyte">MB</acronym> per al Win­dows, veu­rem que només s’han de seguir les ins­truc­ci­ons que van sor­tint a la pan­ta­lla. En la <span class="figref"><a href="#Figure21"><span>figura</span>.3</a></span> podeu veure la pan­ta­lla d’inici que ens guiarà en la ins­tal·lació.
+</p>
+<div class="iocfigure"><a name="Figure21"></a><figure>
+<figcaption style="width: 503px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Ins­tal·lació del Mozi­lla Thun­der­bird
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_27.png" alt="" style=""></figure>
+</div>
+<p>
+També hau­rem de donar les dades dels pro­to­cols SMTP i POP3 del compte de cor­reu que volem bai­xar, ja que, per uti­lit­zar el ges­tor de cor­reu, cal que esti­gui vin­cu­lat a un compte de cor­reu elec­trò­nic que és el que uti­lit­za­rem per rebre i enviar mis­sat­ges.
+</p>
+
+<p>
+A més, en un mateix ordi­na­dor podem tenir diver­sos ges­tors de cor­reu POP3 ins­tal·lats. Per aquest motiu, al llarg del pro­cés d’ins­tal·lació també se’ns pre­gun­tarà si volem que el Thun­der­bird sigui el nos­tre cli­ent de cor­reu per defecte. En cas afir­ma­tiu, només hau­rem de selec­ci­o­nar la case­lla ade­quada.
+</p>
+
+<p>
+El Thun­der­bird per­met tenir diver­sos comp­tes de cor­reu elec­trò­nic. Així, cada cop que acce­dim al ges­tor de cor­reu, esco­lli­rem quin cor­reu volem bai­xar.
+</p>
+
+<p>
+Com podeu veure en la <span class="figref"><a href="#Figure22"><span>figura</span>.4</a></span>, la inter­fí­cie del Thun­der­bird és força sem­blant a l’estruc­tura d’altres ges­tors de cor­reu.
+</p>
+<div class="iocfigure"><a name="Figure22"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Inter­fí­cie de la safata d’entrada del Mozi­lla Thun­der­bird
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_28.png" alt="" style=""></figure>
+</div>
+<p>
+
+</p>
+
+<p>
+Anà­lo­ga­ment, si uti­lit­zem un altre cli­ent de cor­reu com l’Out­look 2007 con­tin­gut en la ver­sió Office 2007, el pro­cés d’ins­tal·lació és auto­mà­tic si s’afe­geix quan s’ins­tal·la el paquet ofi­mà­tic MS Office; si no fos el cas, només hau­ríem de tor­nar a inse­rir el CD de la ver­sió de l’Office ade­quada i esco­llir l’opció Agre­gar o treure fun­ci­ons i incloure l’opció de l’Out­look.
+</p>
+<div class="iocfigure"><a name="Figure23"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Pro­cés de con­fi­gu­ra­ció d’un nou compte en l’Out­look 2007
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_29.png" alt="" style=""></figure>
+</div>
+<p>
+Per acce­dir a l’Out­look hem d’anar a <em>Inici\Pro­gra­mes Micro­soft Office\Micro­soft Office Out­look 2007</em> i, el pri­mer cop que hi acce­dim, l’assis­tent ens guiarà per con­fi­gu­rar un compte de cor­reu elec­trò­nic on, bàsi­ca­ment, ens dema­narà les dades del compte que volem inte­grar, i també els tipus de ser­vi­dors d’entrada (POP/IMAP) i sor­tida (SMTP), tal com podeu veure en la <span class="figref"><a href="#Figure23"><span>figura</span>.5</a></span>.
+</p>
+
+<p>
+Al llarg del pro­cés també s’ofe­reix la pos­si­bi­li­tat d’habi­li­tar la carac­te­rís­tica de cerca ins­tan­tà­nia en l’Out­look, com també la inte­gra­ció d’una llista de sub­mi­nis­tra­ment RSS (<em>really sim­ple syn­di­ca­tion</em>). RSS és un for­mat de dades que s’uti­litza per difon­dre con­tin­guts a subs­crip­tors d’un lloc web deter­mi­nat.
+</p>
+
+<p>
+La inter­fí­cie del ges­tor de cor­reu és la que apa­reix en la <span class="figref"><a href="#Figure24"><span>figura</span>.6</a></span>.
+</p>
+<div class="iocfigure"><a name="Figure24"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Inter­fí­cie del ges­tor de cor­reu Out­look 2007
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_30.png" alt="" style=""></figure>
+</div>
+</div>
+
+<h3>Diver­sos comp­tes per cada ges­tor de cor­reu<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Tots els cli­ents de cor­reu que hi ha en el mer­cat tenen la pos­si­bi­li­tat de ges­ti­o­nar diver­sos comp­tes de cor­reu; per aquest motiu, per a un mateix ges­tor de cor­reu es poden crear dife­rents comp­tes de cor­reu de diver­sos usu­a­ris.
+</p>
+
+<p>
+Per exem­ple, en el cas del ges­tor de cor­reu Thun­der­bird, per Crear un compte nou, ani­rem a <em>Eines\Parà­me­tres dels comp­tes\Afe­geix un compte</em>. Una altra opció és des de <em>Car­pe­tes locals</em>, din­tre de l’apar­tat <em>Comp­tes</em>, fer clic a sobre de <em>Crea un compte nou</em>. L’assis­tent ens dóna l’opció de triar entre crear un nou compte de cor­reu, un bloc o canal RSS, un compte de cor­reu Gmail o un grup de dis­cus­sió. Si esco­llim l’opció <em>Compte de cor­reu</em>, se’ns ani­ran mos­trant dife­rents pan­ta­lles on hau­rem d’inse­rir les dades del cor­reu que volem donar d’alta. D’una banda, se’ns dema­narà el nom i l’adreça de cor­reu; de l’altra, impor­tant, se’ns dema­narà infor­ma­ció del ser­vi­dor d’entrada (POP o IMAP) i del ser­vi­dor de sor­tida (SMTP).
+</p>
+
+<p>
+Així, per exem­ple, si el nos­tre cor­reu és alumneASI@​xtec.​cat, espe­ci­fi­ca­rem pop.​xtec.​cat com a ser­vi­dor d’entrada i smtp.​xtec.​cat com a ser­vi­dor de sor­tida. Tri­a­rem el ser­vi­dor d’entrada POP o IMAP depe­nent de quina vul­guem que sigui la ges­tió del nos­tre cor­reu. En la <span class="figref"><a href="#Figure25"><span>figura</span>.7</a></span> es pot visu­a­lit­zar qui­nes serien les dades reque­ri­des per con­fi­gu­rar un nou compte de cor­reu, en aquest cas, de Gmail.
+</p>
+<div class="iocfigure"><a name="Figure25"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Con­fi­gu­ra­ció d’un compte de cor­reu en el Thun­der­bird
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_31.png" alt="" style=""></figure>
+</div>
+<p>
+Per aca­bar, vali­da­rem el nom d’usu­ari per acce­dir al compte i el nom de compte que volem que ens apa­re­gui i, final­ment, obtin­drem un resum del nou compte.
+</p>
+
+<p>
+Cal des­ta­car que en la fines­tra ini­cial per crear un nou compte també se’ns ofe­reix l’opció de vin­cu­lar el ges­tor de cor­reu direc­ta­ment amb un compte de Gmail. En aquest cas, només cal­drà espe­ci­fi­car l’usu­ari del cor­reu de Gmail i, auto­mà­ti­ca­ment, ja que­da­ran con­fi­gu­rats els ser­vi­dors d’entrada (pop.​gmail.​com) i sor­tida (smtp.​gmail.​com).
+</p>
+
+<p>
+Cal­drà que, entre tots els comp­tes cre­ats, n’esta­blim un de pre­de­ter­mi­nat. A més, si en crear el nou compte hem selec­ci­o­nat l’opció <em>Baixa els mis­sat­ges ara</em>, ens dema­narà la con­tra­se­nya del cor­reu i bai­xarà els nous mis­sat­ges.
+</p>
+
+<p>
+Una vegada hem pre­de­ter­mi­nat un compte de cor­reu en el ges­tor, en podem visu­a­lit­zar les carac­te­rís­ti­ques i modi­fi­car-les.
+</p>
+
+<p>
+Si fem <em>Eines\Parà­me­tres del compte</em>, entre d’altres, podrem modi­fi­car la con­fi­gu­ra­ció d’algu­nes dades del compte com els parà­me­tres del ser­vi­dor i cor­reu brossa, o bé afe­gir un compte nou o supri­mir el compte actiu.
+</p>
+
+<p>
+Si uti­lit­zem el ges­tor de cor­reu Out­look també podem tenir inte­grats diver­sos comp­tes de cor­reu elec­trò­nic. Per afe­gir o eli­mi­nar un compte de cor­reu, hem d’anar a <em>Eines\Con­fi­gu­ra­ció del compte</em>; en la pes­ta­nya <em>Cor­reu elec­trò­nic</em> selec­ci­o­nem l’opció <em>Crea</em> i afe­gi­rem un compte nou. Anà­lo­ga­ment, podrem modi­fi­car parà­me­tres del compte actiu fent clic a <em>Repa­rar</em>, o eli­mi­nar-lo fent clic a <em>Eli­mi­nar</em>. En la <span class="figref"><a href="#Figure26"><span>figura</span>.8</a></span> podeu veure aques­tes opci­ons.
+</p>
+<div class="iocfigure"><a name="Figure26"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Con­fi­gu­ra­ció d’un compte de cor­reu en l’Out­look 2007
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_32.png" alt="" style=""></figure>
+</div>
+</div>
+
+<h3>Migra­ció de dades entre dife­rents ges­tors de cor­reu POP3<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Atesa la diver­si­tat de ges­tors de cor­reu POP3 que hi ha, la majo­ria con­te­nen eines que per­me­ten migrar les dades d’un ges­tor a un altre.
+</p>
+
+<p>
+Així, per exem­ple, en el cas del ges­tor de cor­reu Thun­der­bird la migra­ció de dades d’un cli­ent a un altre és força sim­ple; de fet, si rea­lit­zem la ins­tal·lació sobre el Win­dows, una vegada fina­lit­zat el pro­cés, se’ns dema­narà si volem impor­tar la infor­ma­ció ubi­cada en l’Out­look Express o l’Out­look i, si és el cas, auto­mà­ti­ca­ment copi­arà totes les dades al nou ges­tor de cor­reu, tal com podeu veure en la <span class="figref"><a href="#Figure27"><span>figura</span>.9</a></span>.
+</p>
+<div class="iocfigure"><a name="Figure27"></a><figure>
+<figcaption style="width: 565px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Migra­ció de dades entre ges­tors de cor­reu
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_33.png" alt="" style=""></figure>
+</div>
+</div>
+
+<h3>Ges­tió del cor­reu brossa<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+El cor­reu brossa és el cor­reu que no voleu rebre (<em>spam</em>). Nor­mal­ment, aquests cor­reus con­te­nen publi­ci­tat o són cor­reus mas­sius d’adre­ces des­co­ne­gu­des no gaire fia­bles. Podeu con­fi­gu­rar fil­tres adap­ta­tius (que van apre­nent segons les vos­tres deci­si­ons) per reco­nèi­xer aquest tipus de cor­reus i posar-los en una car­peta dife­rent, esbor­rar-los o fer l’acció que pre­de­ter­mi­neu.
+</p>
+
+<p>
+De tant en tant, és con­ve­ni­ent revi­sar la car­peta del cor­reu brossa per si hi ha algun mis­satge d’un con­tacte cone­gut. Si no hi ha cap mis­satge que us interessi, podeu eli­mi­nar el con­tin­gut de la car­peta o dei­xar-lo per­què el ser­vi­dor esborri els mis­sat­ges auto­mà­ti­ca­ment pas­sats uns dies.
+</p>
+
+<p>
+Una de les carac­te­rís­ti­ques d’un bon ges­tor de cor­reu és que sigui capaç de fil­trar mis­sat­ges no vol­guts a la car­peta espe­cí­fica des­ti­nada al cor­reu brossa.
+</p>
+
+<p>
+En l’Out­look, tro­bem les opci­ons per ges­ti­o­nar aquest tipus de cor­reu a <em>Acci­ons\Cor­reu elec­trò­nic no desit­jat</em>. Din­tre d’aquest menú es poden defi­nir les adre­ces de cor­reu elec­trò­nic que es poden con­si­de­rar cor­reu brossa. Si, din­tre d’aquest menú, selec­ci­o­nem Opci­ons per al cor­reu no vol­gut es poden defi­nir dife­rents nivells d’exi­gèn­cia per fil­trar el cor­reu.
+</p>
+
+<p>
+En el Thun­der­bird s’inclou, per defecte, una car­peta de cor­reu brossa din­tre de cada compte creat, i així per­met clas­si­fi­car el cor­reu no vol­gut per mitjà del fil­tre antii­nun­da­ció, que és un dels punts forts de les últi­mes ver­si­ons d’aquest ges­tor de cor­reu. Així, s’ins­pec­ci­ona el codi <acronym title="HyperText Markup Language">HTML</acronym> dels mis­sat­ges que rep i auto­mà­ti­ca­ment inha­bi­lita la pos­si­bi­li­tat de veure foto­gra­fies d’adre­ces noves o sos­pi­to­ses; òbvi­a­ment, l’usu­ari podrà habi­li­tar aques­tes imat­ges per a aquesta ses­sió o d’una manera per­ma­nent. L’usu­ari té mol­tes opci­ons per con­tro­lar el cor­reu brossa: el pot eli­mi­nar imme­di­a­ta­ment, el pot moure a una altra car­peta o el pot dei­xar en la safata d’entrada com a cor­reu brossa. Cada vegada que es marca un mis­satge com a brossa, el cli­ent de cor­reu “aprèn” i millora el fil­tratge.
+</p>
+
+<p>
+Des d’<em>Eines\Opci­ons\Pri­va­desa</em> podem ges­ti­o­nar el cor­reu brossa d’una manera efi­ci­ent, i també acti­var l’anti­vi­rus i ana­lit­zar els mis­sat­ges sus­cep­ti­bles de ser frau­du­lents.
+</p>
+
+<p>
+Per exe­cu­tar les acci­ons refe­rents als mis­sat­ges brossa, cal selec­ci­o­nar <em>Eines\Exe­cuta</em> els con­trols de brossa a la car­peta. Anà­lo­ga­ment, si volem supri­mir la brossa, farem <em>Eines\Supri­meix la brossa de la car­peta</em>.
+</p>
+
+</div>
+
+<h3>Cre­a­ció de regles i fil­trat­ges<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Els <strong>fil­tres</strong> ens per­me­ten clas­si­fi­car els cor­reus així que els rebem, de manera que segons qui els envia pas­sen direc­ta­ment a una car­peta o una altra.
+</p>
+
+<p>
+La majo­ria de cli­ents de cor­reu ofe­rei­xen l’opció d’agre­gar regles o fil­trat­ges per ges­ti­o­nar el cor­reu elec­trò­nic.
+</p>
+
+<p>
+En el cas de l’Out­look, per rea­lit­zar aques­tes acci­ons hem d’anar a <em>Eines\Regles i aler­tes</em>. Ens apa­rei­xerà una fines­tra on selec­ci­o­na­rem la pes­ta­nya <em>Regles de cor­reu elec­trò­nic\Nova regla</em>. A par­tir d’aquí, un assis­tent ens guiarà per esco­llir el tipus de regla que volem apli­car.
+</p>
+
+<p>
+En el cas del Thun­der­bird, una fun­ci­o­na­li­tat molt interes­sant és que podem defi­nir els nos­tres pro­pis fil­tres; des d’<em>Eines\Fil­tres de mis­sat­ges</em> podem esco­llir a quin compte de cor­reu volem apli­car el fil­tre i també per­so­na­lit­zar-lo fent <em>Nou</em>. Per apli­car els fil­tres que estan defi­nits, cal anar a <em>Eines\Exe­cuta els fil­tres en la car­peta</em>.
+</p>
+
+<p>
+De fet, podem exe­cu­tar fil­trat­ges tant per a un compte de cor­reu deter­mi­nat com per a una car­peta local. Cal des­ta­car la uti­li­tat d’aquesta fun­ci­o­na­li­tat per orga­nit­zar la infor­ma­ció del cor­reu en car­pe­tes.
+</p>
+
+<p>
+Per exem­ple, supo­sem que volem crear un fil­tre pel que con­si­de­rem amics. Hem d’anar a <em>Eines\Fil­tres de mis­sat­ges</em>, espe­ci­fi­car sobre quin compte de cor­reu volem apli­car el fil­tre i fer clic a Nou. Poste­ri­or­ment, hem de defi­nir el nom del fil­tre, con­fi­gu­rar les carac­te­rís­ti­ques del mis­satge d’entrada (per exem­ple, algun mis­satge el remi­tent del qual sigui cor­reu Gmail) i espe­ci­fi­car què en volem fer (esbor­rar-lo, moure’l a alguna car­peta, etc.).
+</p>
+
+<p>
+Per­què aquest fil­tre es faci efec­tiu hem d’anar a <em>Eines\Exe­cuta els fil­tres en la car­peta</em>; d’aquesta manera veu­rem que, en la nos­tra safata d’entrada, els mis­sat­ges que pro­ve­nen d’un remi­tent amb compte Gmail apa­rei­xen en color verd.
+</p>
+
+</div>
+
+<h3>Sig­na­tura auto­mà­tica<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Quan redac­tem un mis­satge de cor­reu elec­trò­nic, nor­mal­ment al final hi posem el nos­tre nom i algu­nes dades més de con­tacte. Si volem que el Thun­der­bird ho faci auto­mà­ti­ca­ment, hem de seguir els pas­sos següents:
+</p>
+
+<p>
+<strong>1.</strong> Anem a <em>Eines\Parà­me­tres</em> del compte i aquí triem l’adreça que volem con­fi­gu­rar (<span class="figref"><a href="#Figure28"><span>figura</span>.10</a></span>).
+</p>
+
+<p>
+<strong>2.</strong> En la zona verda de la imatge, podeu veure els tres mèto­des per incloure la sig­na­tura.
+</p>
+<ul>
+<li class="level1"><div class="li"> Podeu escriure la sig­na­tura en el qua­dre, fent ser­vir codis <acronym title="HyperText Markup Language">HTML</acronym> si mar­queu l’opció cor­res­po­nent.</div>
+</li>
+<li class="level2"><div class="li"> Podeu fer la sig­na­tura en for­mat TXT, <acronym title="HyperText Markup Language">HTML</acronym> i for­mat d’imatge i car­re­gar-la.</div>
+</li>
+<li class="level2"><div class="li"> Si teniu feta una vCard, la podeu car­re­gar amb la ter­cera opció.</div>
+</li>
+</ul>
+
+<p>
+<strong>3.</strong> Des­prés d’haver escrit un mis­satge, la sig­na­tura us apa­rei­xerà auto­mà­ti­ca­ment al final (<span class="figref"><a href="#Figure29"><span>figura</span>.11</a></span>).
+</p>
+<div class="iocfigure"><a name="Figure28"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Parà­me­tres del compte
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_34.png" alt="" style=""></figure>
+</div><div class="iocfigure"><a name="Figure29"></a><figure>
+<figcaption style="width: 601px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Mis­satge sig­nat
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_35.png" alt="" style=""></figure>
+</div>
+</div>
+
+<h3>Com­ple­ments<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Els com­ple­ments (<span class="figref"><a href="#Figure30"><span>figura</span>.12</a></span>) inclo­uen els temes (colors, ico­nes, etc.), les exten­si­ons (noves fun­ci­o­na­li­tats) i els con­nec­tors (ponts entre Thun­der­bird i altres apli­ca­ci­ons).
+</p>
+<div class="iocfigure"><a name="Figure30"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Com­ple­ments
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_36.png" alt="" style=""></figure>
+</div>
+<p>
+La pri­mera pes­ta­nya ens per­met veure els com­ple­ments reco­ma­nats i nave­gar per veure tots els altres. Des d’aquí ins­tal·lareu les exten­si­ons, els temes i els con­nec­tors. Les altres pes­ta­nyes us per­me­ten veure el que s’ha ins­tal·lat en el Thun­der­bird fins ara i habi­li­tar, des­ha­bi­li­tar i desins­tal·lar.
+</p>
+<div class="iocfigure"><a name="Figure31"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Pàgina de com­ple­ments per al Thun­der­bird
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_37.png" alt="" style=""></figure>
+</div>
+<p>
+A con­ti­nu­a­ció ins­tal·larem un tema nou (les exten­si­ons i els con­nec­tors s’ins­tal·len d’una manera simi­lar).
+</p>
+
+<p>
+<strong>1.</strong> Feu clic a <em>Navega</em> per tots els com­ple­ments.
+</p>
+
+<p>
+<strong>2.</strong> S’obre amb el nave­ga­dor per defecte la pàgina dels com­ple­ments del Thun­der­bird (<span class="figref"><a href="#Figure31"><span>figura</span>.13</a></span>).
+</p>
+
+<p>
+<strong>3.</strong> Can­vieu l’opció de <em>Tots els com­ple­ments</em> a <em>Temes</em> i feu clic en la icona verda de la dreta per cer­car temes nous.
+</p>
+
+<p>
+<strong>4.</strong> Trieu-ne un (podeu fer clic en el nom per veure com que­darà).
+</p>
+
+<p>
+<strong>5.</strong> Cli­queu a <em>Baixa ara</em>.
+</p>
+
+<p>
+<strong>6.</strong> Us donen unes ins­truc­ci­ons per ins­tal·lar-lo (<span class="figref"><a href="#Figure32"><span>figura</span>.14</a></span>); seguiu-les.
+</p>
+<div class="iocfigure"><a name="Figure32"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Ins­truc­ci­ons per ins­tal·lar un com­ple­ment
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_38.png" alt="" style=""></figure>
+</div>
+<p>
+<strong>7.</strong> Si heu triat un com­ple­ment d’un autor no veri­fi­cat, tin­dreu aquesta fines­tra d’avís (<span class="figref"><a href="#Figure33"><span>figura</span>.15</a></span>).
+</p>
+<div class="iocfigure"><a name="Figure33"></a><figure>
+<figcaption style="width: 557px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Ins­tal·lació de pro­gra­mari
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_39.png" alt="" style=""></figure>
+</div>
+<p>
+Si esteu segurs del com­ple­ment, el podeu ins­tal·lar igual­ment. És pos­si­ble que us demani rei­ni­ciar el Thun­der­bird.
+</p>
+
+<p>
+<strong>8.</strong> Ara ja tenim el tema ins­tal·lat i el podem apli­car, si ho volem, fent clic a <em>Uti­litza el tema</em>.
+</p>
+
+<p>
+<strong>9.</strong> Hem de tor­nar a rei­ni­ciar el Thun­der­bird, però, quan ho fem, ja tin­drem el tema ins­tal·lat.
+</p>
+
+</div>
+
+<h3>Cer­ti­fi­cats<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Els cer­ti­fi­cats digi­tals són arxius que ens per­me­ten auten­ti­car la font d’un cor­reu. Els podem admi­nis­trar des d’<em>Eines\Opci­ons</em> i triar la pes­ta­nya <em>Avan­çat</em> i la sub­pes­ta­nya <em>Cer­ti­fi­cats</em>. Si fem clic a <em>Visu­a­litza els cer­ti­fi­cats</em> els podrem impor­tar.
+</p>
+
+</div>
+
+<h2>Plan­ti­lles i sig­na­tu­res cor­po­ra­ti­ves<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+Pot­ser en l’entorn domès­tic no és gaire cor­rent, però en l’àmbit cor­po­ra­tiu és molt habi­tual enviar mis­sat­ges de cor­reu elec­trò­nic for­ma­tats amb colors, foto­gra­fies i logo­tips. El ges­tor de cor­reu ha de per­me­tre enviar aquests mis­sat­ges que uti­lit­zen una plan­ti­lla en <acronym title="HyperText Markup Language">HTML</acronym> on s’ha dis­se­nyat una estruc­tura amb logo­tips, imat­ges, sig­na­tu­res i altres ele­ments de dis­seny.
+</p>
+
+<p>
+Per al pro­gra­mari Thun­der­bird tro­bem el <strong>com­ple­ment Sta­ti­o­nery</strong> que maxi­mitza el poten­cial d’<acronym title="HyperText Markup Language">HTML</acronym> en el cor­reu elec­trò­nic. Si voleu inte­grar but­lle­tins ben bonics per­fec­ta­ment al vos­tre cor­reu elec­trò­nic, aquest pro­gra­mari és una bona opció per fer-ho (vegeu <span class="figref"><a href="#Figure34"><span>figura</span>.16</a></span>).
+</p>
+<div class="iocfigure"><a name="Figure34"></a><figure>
+<figcaption style="width: 548px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Plan­ti­lla feta amb Sta­ti­o­nery
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_41.png" alt="" style=""></figure>
+</div>
+</div>
+
+<h2>Subs­crip­ció o sin­di­ca­ció de notí­cies ("news"): con­fi­gu­ra­ció, ús i sin­cro­nit­za­ció de mis­sat­ges<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+L’RSS, XML o Atom és una tec­no­lo­gia desen­vo­lu­pada per als llocs que s’actu­a­lit­zen amb fre­qüèn­cia, com blocs o mit­jans de comu­ni­ca­ció digi­tals. Amb aquesta eina es pot com­par­tir la infor­ma­ció i uti­lit­zar-la en altres llocs web o pro­gra­mes sense haver d’acce­dir a la pàgina web d’ori­gen de la infor­ma­ció.
+</p>
+
+<p>
+Els RSS-Atom són part de la famí­lia dels for­mats XML (llen­guatge de mar­ques o eti­que­tes) i estan dis­se­nyats per a la dis­tri­bu­ció (<em>syn­di­ca­tion</em>) de notí­cies o infor­ma­ció tipus notí­cies con­tin­gu­des en llocs web.
+</p>
+
+<p>
+Aquesta tec­no­lo­gia genera un arxiu que conté els titu­lars, un resum breu dels arti­cles i notí­cies i un enllaç cap a aques­tes. També pot incloure infor­ma­ció addi­ci­o­nal com el nom de l’autor o la data i l’hora de publi­ca­ció del con­tin­gut.
+</p>
+
+<p>
+Per rebre les últi­mes actu­a­lit­za­ci­ons d’un diari o blog, l’usu­ari s’ha de subs­criure al canal de notí­cies que li interessi en par­ti­cu­lar (esco­llint el mitjà de comu­ni­ca­ció o blog i, un cop dins, la sec­ció d’interès).
+</p>
+
+<p>
+La tec­no­lo­gia RSS-Atom per­met estar al dia i nave­gar entre tota la infor­ma­ció que ens ofe­reix la Xarxa, selec­ci­o­nant només la que ens interessa. No és l’usu­ari qui va a la infor­ma­ció, sinó que la infor­ma­ció arriba a l’usu­ari direc­ta­ment.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Per lle­gir els canals de con­tin­guts (<em>feed</em>) RSS cal uti­lit­zar un pro­grama ano­me­nat <strong>afe­gi­dor</strong>. Aquest tipus de pro­grama també es coneix com a <em>lec­tor de feeds</em> o <em>canal de notí­cies</em>, entre altres vari­a­ci­ons.
+</p>
+
+</div>
+
+<h3>Com afe­gi­rem RSS, XML o Atom<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Hi ha dos sis­te­mes per agre­gar canals RSS-Atom:
+</p>
+
+<p>
+<strong>1.</strong> Acce­dint direc­ta­ment a la pàgina web d’infor­ma­ció; per exem­ple, acce­dim a la web d’<em>El Peri­ó­dico de Cata­lu­nya</em> (<a href="http://www.elperiodico.cat/" class="urlextern" title="http://www.elperiodico.cat" rel="nofollow">www.​elperiodico.​cat</a>). Fem clic a l’opció de menú RSS (<span class="figref"><a href="#Figure35"><span>figura</span>.17</a></span>).
+</p>
+<div class="iocfigure"><a name="Figure35"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Web d’”El Peri­ó­dico de Cata­lu­nya”
+
+</figcaption><img src="./a2 continguts_files/selection_055.png" alt="" style=""></figure>
+</div><ul>
+<li class="level1"><div class="li"> Dins dels mar­ca­dors, podem esco­llir la sec­ció que ens interessa.</div>
+</li>
+<li class="level1"><div class="li"> Mar­quem, per exem­ple, Bar­ce­lona.</div>
+</li>
+<li class="level1"><div class="li"> Final­ment, podem esco­llir el lloc on volem enviar la subs­crip­ció per visu­a­lit­zar-la poste­ri­or­ment:</div>
+<ul>
+<li class="level2"><div class="li"> Mar­ca­dors actius/dinà­mics (del nave­ga­dor)</div>
+</li>
+<li class="level2"><div class="li"> Blog: per afe­gir-ho a un blog</div>
+</li>
+<li class="level2"><div class="li"> MyYa­hoo!, Goo­gle: per agre­gar-lo a un escrip­tori vir­tual</div>
+</li>
+<li class="level2"><div class="li"> Cor­reu elec­trò­nic</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<strong>2.</strong> Per mitjà del nave­ga­dor web
+</p>
+
+<p>
+Alguns nave­ga­dors per­me­ten agre­gar direc­ta­ment un RSS des de la barra d’adre­ces. En acce­dir a un lloc web amb aquesta tec­no­lo­gia, apa­rei­xerà en la barra de nave­ga­ció la icona taronja. Des d’aquí, l’usu­ari es pot subs­criure al canal del blog o diari.
+</p>
+
+</div>
+
+<h2>La lli­breta d'adre­ces<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+La <strong>lli­breta d’adre­ces</strong> és un llis­tat d’adre­ces de cor­reu elec­trò­nic, simi­lar a una agenda elec­trò­nica, que per­met posar infor­ma­ció del nom, adreça de cor­reu elec­trò­nic, telè­fons i altres dades. La seva uti­li­tat es basa a poder intro­duir les dades de les per­so­nes amb qui es manté més con­tacte i no haver d’escriure les seves adre­ces cada cop que les neces­si­tem. La lli­breta es pot expor­tar a altres apli­ca­ci­ons i, en la majo­ria d’apli­ca­ci­ons, també la podreu impor­tar (<span class="figref"><a href="#Figure36"><span>figura</span>.18</a></span>).
+</p>
+<div class="iocfigure"><a name="Figure36"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Lli­breta d’adre­ces
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_42.png" alt="" style=""></figure>
+</div>
+</div>
+
+<h3>Les llis­tes de cor­reu elec­trò­nic<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Les <strong>llis­tes de cor­reu elec­trò­nic</strong> són un ús espe­cial del cor­reu elec­trò­nic que per­met la dis­tri­bu­ció mas­siva d’infor­ma­ció entre un gran nom­bre d’usu­a­ris d’Inter­net al mateix temps. Per fer ser­vir la llista de cor­reu podeu escriure un cor­reu on el des­ti­na­tari és l’adreça de la llista (per exem­ple, llistaAlmunes@​ioc.​cat) i el cor­reu arri­barà a totes les per­so­nes ins­cri­tes a la llista.
+</p>
+
+<p>
+De vega­des s’empren llis­tes de milers o, fins i tot, mili­ons d’adre­ces de cor­reu elec­trò­nic per a l’envi­a­ment de cor­reu no vol­gut o <em>spam</em>.
+</p>
+
+<p>
+Mol­tes orga­nit­za­ci­ons uti­lit­zen cada vegada més aquesta eina per man­te­nir infor­ma­des les per­so­nes prin­ci­pal­ment amb notí­cies, publi­ci­tat i infor­ma­ció interes­sant. Per no caure en pràc­ti­ques de <em>spam</em>, els cor­reus s’envien des­prés de la ins­crip­ció prè­via del des­ti­na­tari, donant-li l’opor­tu­ni­tat de can­cel·lar-la quan així ho vul­gui.
+</p>
+
+<p>
+Així, si uti­lit­zem el Thun­der­bird, inclou una lli­breta d’adre­ces (<em>Eines\Lli­breta d’adre­ces</em>) per emma­gat­ze­mar les dades dels nos­tres con­tac­tes i incor­pora, a banda de les acci­ons bàsi­ques, mol­tes uti­li­tats com ara <em>Impor­tar la lli­breta d’adre­ces d’altres cor­reus</em> i <em>Expor­tar les dades a un docu­ment</em> *.LDIF.
+</p>
+
+<p>
+Anà­lo­ga­ment, podem dis­po­sar de les adre­ces ubi­ca­des en les car­pe­tes locals o les podem cer­car en un ser­vi­dor de direc­tori LDAP deter­mi­nat (<em>Eines\Opci­ons\Redac­ció\Adre­ça­ment</em>, <em>Selec­ci­o­nar ser­vi­dor de direc­tori</em> i <em>Edita els direc­to­ris</em>).
+</p>
+
+<p>
+En el Thun­der­bird, per crear una llista de dis­tri­bu­ció hem d’anar a <em>Eines\Lli­breta d’adre­ces\Nova llista</em> i afe­gir els usu­a­ris que volem que for­min part de la llista, tal com podeu veure en la <span class="figref"><a href="#Figure37"><span>figura</span>.19</a></span>.
+</p>
+<div class="iocfigure"><a name="Figure37"></a><figure>
+<figcaption style="width: 412px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Llista de cor­reu
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_43.png" alt="" style=""></figure>
+</div>
+<p>
+Podem acce­dir a la lli­breta mit­jan­çant la icona de la barra d’eines cor­res­po­nent o des del menú <em>Eines</em>. Té l’aspecte que mos­tra la <span class="figref"><a href="#Figure38"><span>figura</span>.20</a></span>.
+</p>
+<div class="iocfigure"><a name="Figure38"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Cre­a­ció d’una llista de dis­tri­bu­ció amb el Thun­der­bird
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_44.png" alt="" style=""></figure>
+</div>
+</div>
+
+<h3>Crear un con­tacte<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Podem intro­duir un con­tacte nou a la lli­breta d’adre­ces, afe­gint si es vol més infor­ma­ci­ons com ara telè­fons, bus­ca­per­so­nes, foto­gra­fies, etc. Això ens dóna més infor­ma­ció i, a més, ens per­met tenir una agenda deta­llada dels nos­tres con­tac­tes. Fixeu-vos bé en totes les opci­ons i pes­ta­nyes que té la fines­tra i ompliu les dades segons les vos­tres neces­si­tats (<span class="figref"><a href="#Figure39"><span>figura</span>.21</a></span>). Per fer-ho, fem clic a <em>Crea un con­tacte</em>.
+</p>
+<div class="iocfigure"><a name="Figure39"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Con­tacte nou a la lli­breta d’adre­ces
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_45.png" alt="" style=""></figure>
+</div>
+<p>
+Omplim les dades, però sobre­tot la que més ens interessa és la de l’adreça elec­trò­nica. Un cop hem escrit la infor­ma­ció en les dife­rents pes­ta­nyes, veri­fi­quem en quina cate­go­ria volem afe­gir l’adreça (en el cas de la imatge és la Lli­breta d’adre­ces per­so­nals).
+</p>
+
+<p>
+Veiem que les adre­ces que afe­gim es posen a la part de dalt i, a sota, es mos­tra la infor­ma­ció de l’adreça que esti­gui selec­ci­o­nada en aquest moment (<span class="figref"><a href="#Figure40"><span>figura</span>.22</a></span>).
+</p>
+<div class="iocfigure"><a name="Figure40"></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Lli­breta d’adre­ces
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_46.png" alt="" style=""></figure>
+</div>
+<p>
+Fixeu-vos que, fins i tot, hi podem posar una foto­gra­fia. Si volem edi­tar les dades, només cal selec­ci­o­nar l’adreça en qües­tió i fer clic en el botó <em>Pro­pi­e­tats</em> de la barra d’eines. També tenim l’opció de supri­mir el compte: <em>Supri­meix</em> o enviar un cor­reu elec­trò­nic: <em>Redacta</em>.
+</p>
+
+<p>
+Vegem l’última opció de la barra d’eines: <em>Crea una llista</em>. Aquesta opció ens per­met crear llis­tes d’adre­ces (per exem­ple, Amics, Com­panys de l’IOC, Veïns, etc.).
+</p>
+
+<p>
+Pri­me­ra­ment posem el nom a la llista, el sobre­nom (si ho volem) i la des­crip­ció (també és opci­o­nal) (<span class="figref"><a href="#Figure41"><span>figura</span>.23</a></span>). Des­prés, només cal comen­çar a escriure les adre­ces i el pro­grama les acaba de com­ple­tar si són en la lli­breta d’adre­ces.
+</p>
+<div class="iocfigure"><a name="Figure41"></a><figure>
+<figcaption style="width: 390px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Llista de cor­reu
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_47.png" alt="" style=""></figure>
+</div>
+<p>
+A la lli­breta d’adre­ces, la icona és dife­rent de la d’un con­tacte indi­vi­dual.
+</p>
+
+<p>
+A par­tir d’ara, sem­pre que escri­guem una adreça en redac­tar un cor­reu elec­trò­nic, el Thun­der­bird mirarà la lli­breta de cor­reu i la inten­tarà com­ple­tar, de manera que ens estal­vi­a­rem haver d’escriure tota l’adreça.
+</p>
+
+</div>
+
+<h3>Impor­tar la lli­breta d'adre­ces<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+En cas que ja tin­guem un ges­tor de cor­reu ins­tal·lat, podem impor­tar la lli­breta d’adre­ces del ges­tor. Per fer-ho, hem d’anar a <em>Eines\Importa</em> (<span class="figref"><a href="#Figure42"><span>figura</span>.24</a></span>).
+</p>
+<div class="iocfigure"><a name="Figure42"></a><figure>
+<figcaption style="width: 502px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Impor­tar la lli­breta d’adre­ces
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_48.png" alt="" style=""></figure>
+</div>
+<p>
+Triem l’opció de <em>Lli­bre­tes d’adre­ces</em> i fem clic a <em>Enda­vant</em>. Ara se’ns demana de quina apli­ca­ció volem impor­tar la lli­breta d’adre­ces. L’última opció, <em>Text</em>, és una impor­ta­ció des d’un arxiu en for­mat LDIF, o deli­mi­tat per comes o tabu­la­ci­ons (<span class="figref"><a href="#Figure43"><span>figura</span>.25</a></span>).
+</p>
+<div class="iocfigure"><a name="Figure43"></a><figure>
+<figcaption style="width: 502px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Última opció de la impor­ta­ció
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_49.png" alt="" style=""></figure>
+</div>
+</div>
+
+<h2>Ges­tió de cor­reus<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+La ges­tió dels cor­reus es pot fer de dues mane­res dife­rents: amb ges­tors de tipus POP3 o amb ges­tors de cor­reu web.
+</p>
+
+<p>
+<strong>1. Ges­tors de tipus POP3</strong>
+</p>
+
+<p>
+Els ges­tors de cor­reu de tipus POP3 tenen una inter­fí­cie força visual i fàcil de mane­jar per rea­lit­zar les opci­ons bàsi­ques de redac­tar mis­sat­ges, res­pon­dre, reen­viar, etc.
+</p>
+<div class="iocfigure"><a name="Figure44"></a><figure>
+<figcaption style="width: 630px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Inter­fí­cie per redac­tar mis­sat­ges en Thun­der­bird
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_50.png" alt="" style=""></figure>
+</div>
+<p>
+Així, en el cas del Thun­der­bird, la inter­fí­cie per redac­tar un mis­satge, que podeu veure en la <span class="figref"><a href="#Figure44"><span>figura</span>.26</a></span>, a banda de per­me­tre les opci­ons de donar for­mat al text (negreta, tipus de lle­tra, etc.) també incor­pora opci­ons per adjun­tar fit­xers i adre­ces web, fer cor­rec­ci­ons orto­grà­fi­ques, etc.
+</p>
+
+<p>
+En la barra d’eines gene­ral del Thun­der­bird, apa­rei­xen també els acces­sos direc­tes a les acci­ons més comu­nes en la ges­tió dià­ria del cor­reu elec­trò­nic com ara redac­tar, res­pon­dre, reen­viar, recu­pe­rar (per actu­a­lit­zar la bús­tia), etc.
+</p>
+
+<p>
+<strong>2. Ges­tors de cor­reu web</strong>
+</p>
+
+<p>
+Els ges­tors de cor­reu web han evo­lu­ci­o­nat bus­cant inter­fí­cies fàcils d’uti­lit­zar per als usu­a­ris i també que donin velo­ci­tat i potèn­cia a l’entorn trac­tant d’estal­viar infor­ma­ció addi­ci­o­nal que repre­senti una càr­rega exces­siva de con­tin­gut i de recur­sos.
+</p>
+
+<p>
+En prin­cipi, la majo­ria de ges­tors de cor­reu pre­sen­ten la safata d’entrada amb una clas­si­fi­ca­ció amb car­pe­tes; no obs­tant això, aquesta ten­dèn­cia està can­vi­ant i se subs­ti­tu­ei­xen les car­pe­tes per eti­que­tes, com és el cas del Gmail, que no sola­ment ofe­rei­xen una inter­fí­cie més clara i sen­zi­lla sinó també una velo­ci­tat òptima de càr­rega, edi­ció i cerca de mis­sat­ges.
+</p>
+
+<p>
+A més, per exem­ple, la sen­zi­llesa de la pan­ta­lla de pre­sen­ta­ció del Gmail sense notí­cies i infor­ma­ció addi­ci­o­nal ja ens informa de qui­nes en són algu­nes de les carac­te­rís­ti­ques prin­ci­pals, com un fil­tratge potent de cor­reu brossa, un sis­tema de cerca ràpid i efi­caç i una capa­ci­tat d’emma­gat­ze­matge des­ta­ca­ble, a més de la fàcil cre­a­ció de fil­tres, entre d’altres.
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figure45"><span>figura</span>.27</a></span> podeu veure la inter­fí­cie d’edi­ció de mis­sat­ges del Gmail i, també, a la banda esquerra, la clas­si­fi­ca­ció de la infor­ma­ció en eti­que­tes.
+</p>
+<div class="iocfigure"><a name="Figure45"></a><figure>
+<figcaption style="width: 569px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Edi­ció de mis­sat­ges amb Gmail
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_51.png" alt="" style=""></figure>
+</div>
+<p>
+En aquesta figura també veiem que, a l’hora d’edi­tar un mis­satge, podem uti­lit­zar diver­ses opci­ons de for­mat (negreta, cur­siva, tipus de lle­tra, enllaç web, etc.), a més de com­pro­var l’orto­gra­fia en diver­sos idi­o­mes i adjun­tar un fit­xer, o des­car­tar o desar un mis­satge si encara no el volem enviar.
+</p>
+
+<p>
+La inter­fí­cie de cor­reu que apa­reix de manera pre­de­ter­mi­nada en el Gmail conté un menú a l’esquerra on apa­rei­xen les eti­que­tes amb algu­nes de les fun­ci­o­na­li­tats, com l’opció de Redacta un mis­satge, Safata d’entrada per acce­dir als mis­sat­ges, Mis­sat­ges envi­ats, Esbor­ranys (cada pocs segons es desa un esbor­rany del mis­satge que estem redac­tant), Xats, etc. Més avall tro­bem l’opció d’afe­gir con­tac­tes i també l’opció per edi­tar eti­que­tes que no esti­guin cre­a­des. També tro­bem l’opció d’invi­tar altres amics a tenir un cor­reu Gmail.
+</p>
+
+<p>
+En la part supe­rior de la pan­ta­lla tro­bem els enlla­ços al calen­dari (Goo­gle Calen­dar), docu­ments (Goo­gle Docs), foto­gra­fies, webs, etc.
+</p>
+
+<p>
+En la pan­ta­lla cen­tral tro­bem el seguit de mis­sat­ges que hem rebut i, just a dalt i a baix, tenim opci­ons per arxi­var un mis­satge, mar­car-lo com a cor­reu brossa, supri­mir-lo i altres opci­ons com­ple­men­tà­ries com apli­car un fil­tre con­cret a un mis­satge deter­mi­nat, mar­car-lo, etc.
+</p>
+
+<p>
+Cal des­ta­car l’enllaç directe al web i l’opció de cer­car mis­sat­ges, a més d’una infor­ma­ció mínima de notí­cies.
+</p>
+
+<p>
+També es pot bai­xar el compte de cor­reu Gmail al mòbil, i bai­xar el cor­reu Gmail en un altre cor­reu POP.
+</p>
+
+</div>
+
+<h3>Clas­si­fi­ca­ció del cor­reu<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Atès el volum de mis­sat­ges que acu­mula cada usu­ari i, mol­tes vega­des, la diver­si­tat d’aquests, es fa neces­sari bus­car eines per clas­si­fi­car-los.
+</p>
+
+<p>
+Així, el Mozi­lla Thun­der­bird ofe­reix la pos­si­bi­li­tat tant d’assig­nar eti­que­tes pre­de­fi­ni­des com de crear-ne de noves. Per exem­ple, si selec­ci­o­nem un mis­satge i fem clic al botó dret del ratolí, hi podem posar una eti­queta pre­de­ter­mi­nada.
+</p>
+<div class="iocfigure"><a name="Figure46"></a><figure>
+<figcaption style="width: 523px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Cre­a­ció d’eti­que­tes amb el Mozi­lla Thun­der­bird
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_52.png" alt="" style=""></figure>
+</div>
+<p>
+O, si selec­ci­o­nem Nova eti­queta, en podem crear una de nova. Per acce­dir a les opci­ons d’eti­queta, també hi podem anar amb el botó d’accés directe Eti­queta o des del menú <em>Mis­satge\Eti­queta</em>. En la <span class="figref"><a href="#Figure46"><span>figura</span>.28</a></span> veiem una mos­tra de com s’afe­gei­xen eti­que­tes.
+</p>
+
+<p>
+En el cas de l’Out­look, a més de l’orga­nit­za­ció basada en car­pe­tes, hi ha la pos­si­bi­li­tat d’assig­nar de manera auto­mà­tica cate­go­ries amb colors als mis­sat­ges de la bús­tia en fun­ció de qui envia el mis­satge o a qui va diri­git. Per acce­dir a aques­tes opci­ons cal anar a <em>Eines\Orga­nitza</em>; hi apa­rei­xerà una fines­tra amb un menú des d’on es podrà esco­llir el cri­teri per apli­car el color que es vol. També és pos­si­ble assig­nar cate­go­ries i colors, sen­zi­lla­ment fent clic en un dels mis­sat­ges amb el botó dret del ratolí i esco­llint l’opció ade­quada en el menú con­tex­tual.
+</p>
+
+</div>
+
+<h3>Eines de segu­re­tat<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Un dels temes que més pre­o­cupa quan s’escull un cli­ent de cor­reu POP3 és que sigui un ser­vei fia­ble i segur; per aquest motiu, cada cop més, els ges­tors incor­po­ren eines de segu­re­tat que sal­va­guar­den la infor­ma­ció dels usu­a­ris i els pro­te­gei­xen, en la mesura que sigui pos­si­ble, d’atacs.
+</p>
+
+<p>
+En temes de segu­re­tat, ges­tors de cor­reu com el Thun­der­bird ofe­rei­xen l’encrip­ta­ció de mis­sat­ges, sig­na­tu­res digi­tals i suport per a cer­ti­fi­cats de vali­desa. Aquesta infor­ma­ció es troba a <em>Eines\Parà­me­tres del compte\Segu­re­tat</em>.
+</p>
+
+</div>
+
+<h3>Nave­ga­ció pels mis­sat­ges i fils de con­versa<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+De vega­des, pot ser útil moure’s ràpi­da­ment entre els mis­sat­ges que tenim en la bús­tia, com també nave­gar pels mis­sat­ges seguint el fil de con­versa; és a dir, agru­par els mis­sat­ges que són res­pos­tes d’un d’ante­rior.
+</p>
+
+<p>
+Així, ges­tors de cor­reu com el Thun­der­bird per­me­ten la nave­ga­ció his­tò­rica en els mis­sat­ges fent clic en les tecles Avan­çar i Retro­ce­dir de manera molt sem­blant a un nave­ga­dor web i can­vi­ant ràpi­da­ment de mis­sat­ges i car­pe­tes. I no sola­ment això, sinó que podem nave­gar pels mis­sat­ges uti­lit­zant deter­mi­na­des tecles numè­ri­ques. Així, si anem a <em>Vés\Següent</em>, tro­ba­rem diver­ses ins­truc­ci­ons per anar al mis­satge següent (fent clic a F), mis­satge per lle­gir (N), i així suc­ces­si­va­ment, i el mateix si anem a <em>Vés\Ante­rior</em>.
+</p>
+
+<p>
+A més, s’ofe­reix l’opció de lle­gir els mis­sat­ges seguint el fil de con­vers; és el que el Thun­der­bird ano­mena <em>cade­nes</em>. Així, si anem a <em>Visu­a­litza\Cade­nes</em>, podrem visu­a­lit­zar tots els mis­sat­ges orga­nit­zats d’aquesta manera.
+</p>
+
+</div>
+
+<h3>Parà­me­tres de con­ne­xió<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+De vega­des, es neces­sita uti­lit­zar un cli­ent de cor­reu amb con­ne­xió directa a Inter­net o bé pas­sant per un ser­vi­dor inter­me­di­ari.
+</p>
+
+<p>
+Cli­ents de cor­reu com el Thun­der­bird ofe­rei­xen la pos­si­bi­li­tat de con­fi­gu­rar aquests parà­me­tres, espe­ci­fi­cant si volem una con­ne­xió a Inter­net o si volem uti­lit­zar un ser­vi­dor inter­me­di­ari. Per fer això hem d’anar a <em>Eines\Opci­ons\Avan­çat\Xarxa i espai de disc</em> i selec­ci­o­nar <em>Con­ne­xió</em>, tal com podeu veure en la <span class="figref"><a href="#Figure47"><span>figura</span>.29</a></span>.
+</p>
+<div class="iocfigure"><a name="Figure47"></a><figure>
+<figcaption style="width: 611px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Con­fi­gu­ra­ció de parà­me­tres de con­ne­xió en el Thun­der­bird
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_53.png" alt="" style=""></figure>
+</div>
+<p>
+El fet que ges­tors de cor­reu com, per exem­ple, el Thun­der­bird tin­guin bones opci­ons de clas­si­fi­ca­ció, fun­ci­ons d’ús còmo­des i eines de segu­re­tat efi­ci­ents fan que siguin bones alter­na­ti­ves de cli­ents de cor­reu gra­tuït per a la ges­tió de cor­reu POP3/IMAP i SMTP.
+</p>
+
+<p>
+Són cone­guts el volum i la gran­dà­ria de mis­sat­ges dia­ris que rebem en la nos­tra bús­tia de cor­reu. En aquest sen­tit, és pos­si­ble que només vul­guem bai­xar els cor­reus que ens interes­sen i dei­xar els altres en el ser­vi­dor per si hi volem acce­dir més enda­vant. Si aquest és el nos­tre objec­tiu, cal que selec­ci­o­nem l’opció IMAP.
+</p>
+
+<p>
+Per con­tra, nor­mal­ment esco­lli­rem l’opció POP si volem bai­xar el cor­reu al nos­tre ordi­na­dor.
+</p>
+
+</div>
+
+<h2>For­mats d’emma­gat­ze­matge de la infor­ma­ció<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+En rebre un cor­reu elec­trò­nic, podeu dur a terme algu­nes acci­ons, com res­pon­dre el mis­satge, reen­viar-lo a una altra adreça de cor­reu, esbor­rar-lo, mar­car-lo com a cor­reu brossa o arxi­var-lo en una car­peta. Tots els pro­gra­mes de ges­tió de cor­reu elec­trò­nic, així com els ges­tors web, per­me­ten aques­tes opci­ons.
+</p>
+
+<p>
+Les car­pe­tes són les eines que es fan ser­vir per ges­ti­o­nar els cor­reus, auto­mà­ti­ca­ment a l’inici tenim les car­pe­tes següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Safata d’entrada: hi ha tots els mis­sat­ges que han arri­bat.</div>
+</li>
+<li class="level1"><div class="li"> Pape­rera: conté una bar­reja de mis­sat­ges.</div>
+</li>
+<li class="level1"><div class="li"> Safata de sor­tida: conté els mis­sat­ges que s’han enviat.</div>
+</li>
+<li class="level1"><div class="li"> Safata de cor­reu brossa</div>
+</li>
+</ul>
+
+<p>
+Podeu crear les vos­tres car­pe­tes per clas­si­fi­car els cor­reus rebuts
+</p>
+
+</div>
+
+<h3>Arxi­var cor­reus<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+De vega­des neces­si­tem con­ser­var mis­sat­ges en el nos­tre compte de cor­reu, encara que no hi vul­guem acce­dir durant un quant temps.
+</p>
+
+<p>
+En aquest aspecte, l’Out­look 2007 ofe­reix la pos­si­bi­li­tat d’arxi­var-los. Per rea­lit­zar aquesta tasca acce­di­rem al menú <em>Fit­xer\Arxi­var</em>. En la fines­tra que sor­tirà hau­rem de selec­ci­o­nar la data a par­tir de la qual volem arxi­var els mis­sat­ges; d’aquesta manera des­a­pa­rei­xe­ran de la safata d’entrada i s’emma­gat­ze­ma­ran en un fit­xer *.PST, que és el for­mat de les car­pe­tes de mis­sat­ges de l’Out­look.
+</p>
+
+</div>
+
+<h2>Ges­tió de l'agenda<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+Un pro­gra­mari d’agenda per­met orga­nit­zar cites en un calen­dari i ges­ti­o­nar tas­ques.
+</p>
+
+<p>
+Les cites es poden visu­a­lit­zar en un calen­dari amb vis­tes dife­rents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Vista dià­ria.</div>
+</li>
+<li class="level2"><div class="li"> Vista set­ma­nal.</div>
+</li>
+<li class="level2"><div class="li"> Vista mul­ti­set­ma­nal (són qua­tre set­ma­nes comp­tant l’actual).</div>
+</li>
+<li class="level2"><div class="li"> Vista men­sual.</div>
+</li>
+</ul>
+
+<p>
+A cada cita se li pot posar un avis o recor­da­tori (uns quants minuts, unes quan­tes hores o uns quants dies abans) en forma de soroll o mis­satge.
+</p>
+
+<p>
+Les tas­ques són sem­blants a les cites, però no han d’estar lli­ga­des per força a una data i una hora, i no apa­rei­xe­ran en el calen­dari, sinó en el qua­dre de tas­ques. Tenen un tant per cent de com­ple­tat; si el per­cen­tatge no arriba al cent per cent, estan pen­dents i quan arri­ben al cent per cent pas­sen a estar com­ple­ta­des.
+</p>
+
+</div>
+
+<h2>Sin­cro­nit­za­ció i interac­ció amb dis­po­si­tius mòbils<span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+Actu­al­ment, tots els dis­po­si­tius mòbils, entre mol­tes altres opci­ons, ofe­rei­xen ser­vei de calen­dari i agenda, que fun­ci­o­nen en el mateix dis­po­si­tiu. Però, sovint, la uti­li­tat d’aquest ser­vei rau a poder-lo sin­cro­nit­zar amb l’ordi­na­dor, ja que d’aquesta manera tin­drem la infor­ma­ció emma­gat­ze­mada en el nos­tre PC.
+</p>
+
+<p>
+En el moment en què volem sin­cro­nit­zar aquest calen­dari del PDA (<em>per­so­nal digi­tal assis­tant</em>, ‘assis­tent digi­tal per­so­nal’) amb algun pro­grama de calen­dari del nos­tre ordi­na­dor, pot ser que neces­si­tem bai­xar algun pro­grama de la Xarxa per fer pos­si­ble aquesta com­pa­ti­bi­li­tat.
+</p>
+
+<p>
+Així, la manera de sin­cro­nit­zar el PDA amb l’ordi­na­dor és pràc­ti­ca­ment directa si aquest PC és de but­xaca i, per tant, uti­litza el Win­dows Mobile i l’ordi­na­dor té ins­tal·lat el sis­tema ope­ra­tiu Win­dows. Nor­mal­ment, el telè­fon o PDA porta un pro­gra­mari que per­met pas­sar arxius d’un dis­po­si­tiu a un altre.
+</p>
+
+<p>
+Per exem­ple, en el cas del Mac, s’inclou el pro­gra­mari iSync, que per­met sin­cro­nit­zar pràc­ti­ca­ment qual­se­vol dis­po­si­tiu elec­trò­nic per mitjà del Blu­e­to­oth amb l’ordi­na­dor.
+</p>
+
+<p>
+Així, per sin­cro­nit­zar el PDA amb un ordi­na­dor, si s’uti­litza el Win­dows XP, s’ha d’ins­tal·lar el pro­grama Micro­soft Active Sync. En el cas del Win­dows Vista, s’ins­tal·larà el Win­dows Mobile Device Cen­ter.
+</p>
+
+<p>
+L’objec­tiu de l’inter­canvi d’infor­ma­ció entre el PDA i el PC és que es pugui dis­po­sar de la infor­ma­ció del PC en qual­se­vol lloc. La majo­ria de PDA per­me­ten sin­cro­nit­zar els tipus d’infor­ma­ció següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Cor­reu elec­trò­nic, con­tac­tes, calen­dari i tas­ques.</div>
+</li>
+<li class="level2"><div class="li"> Imat­ges, música i vídeo.</div>
+</li>
+<li class="level2"><div class="li"> Vin­cles amb webs pre­fe­rits.</div>
+</li>
+<li class="level2"><div class="li"> Arxius.</div>
+</li>
+</ul>
+
+<p>
+Per sin­cro­nit­zar tots dos dis­po­si­tius, usu­al­ment es pot fer amb un cable USB, uti­lit­zant Blu­e­to­oth o amb Wi-Fi si l’apa­rell té l’opció.
+</p>
+
+</div>
+
+<h3>Pro­ce­di­ment per sin­cro­nit­zar un dis­po­si­tiu mòbil amb l'ordi­na­dor<span class="star" name="star" style="display: none;"></span></h3>
+<div class="level3">
+
+<p>
+Si tenim un dis­po­si­tiu mòbil de tipus Win­dows Mobile, aquest por­tarà el pro­gra­mari Active Sync que hau­rem ins­tal·lat en el nos­tre PC. Per ins­tal·lar aquest pro­gra­mari només cal inse­rir el CD en el PC i seguir les ins­truc­ci­ons. En la <span class="figref"><a href="#Figure48"><span>figura</span>.30</a></span> podeu veure alguna de les pan­ta­lles d’ins­tal·lació del cen­tre de dis­po­si­tius de Win­dows Mobile.
+</p>
+
+<p>
+Una vegada ins­tal·lat aquest pro­gra­mari, si volem sin­cro­nit­zar el PDA amb el PC, en con­nec­tar l’un amb l’altre arren­carà l’assis­tent de con­fi­gu­ra­ció de l’Active Sync; seguint les ins­truc­ci­ons de l’assis­tent se’ns dema­narà què volem sin­cro­nit­zar (cor­reu, calen­dari, agenda, etc.) i com­ple­ta­rem els pas­sos de la ins­tal·lació fins a aca­bar.
+</p>
+
+<p>
+Una vegada ins­tal·lat el pro­gra­mari en el PC, des del PDA bus­ca­rem l’opció d’acti­var Acti­veSync i l’opció <em>Sin­cro­nit­zar</em>.
+</p>
+
+<p>
+Simul­tà­ni­a­ment, amb l’ordi­na­dor també s’activa Acti­veSync i s’ini­cia la sin­cro­nit­za­ció auto­mà­ti­ca­ment.
+</p>
+
+<p>
+Aques­tes mane­res de sin­cro­nit­zar el PDA amb l’ordi­na­dor són sem­blants inde­pen­dent­ment de quina sigui la ver­sió del PDA.
+</p>
+<div class="iocfigure"><a name="Figure48"></a><figure>
+<figcaption style="width: 294px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Ins­tal·lació del pro­gra­mari de sin­cro­nit­za­ció del PDA amb l’ordi­na­dor
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_54.png" alt="" style=""></figure>
+</div>
+<p>
+És interes­sant tenir en compte que mol­tes apli­ca­ci­ons web de calen­dari con­te­nen eines per sin­cro­nit­zar amb apa­rells de tipus PDA.
+</p>
+
+<p>
+És el cas, per exem­ple, de l’eina Goo­gle Calen­dar, que en el moment d’edi­tar els mate­ri­als per­met la sin­cro­nit­za­ció amb Win­dows Mobile, iPhone i Black­berry.
+</p>
+
+<p>
+De fet, el mòdul Goo­gle Mobile App que s’ha creat per a iPhone i iPod és una apli­ca­ció gra­tu­ïta que faci­lita aquesta sin­cro­nit­za­ció.
+</p>
+
+<p>
+Estan sor­gint mol­tes eines que per­me­ten la comu­ni­ca­ció entre el PDA i el calen­dari de Goo­gle, entre les quals podem des­tar­car-ne dues:
+</p>
+<ul>
+<li class="level1"><div class="li"> GooSync, un petit pro­grama que per­me­trà sin­cro­nit­zar totes les cites des de dis­po­si­tius de tipus Win­dows Mobile a Goo­gle Calen­dar, que fins i tot per­met noti­fi­car al mòbil les cites o aler­tes pro­gra­ma­des. De moment, n’hi ha una ver­sió gra­tu­ïta i una altra de subs­crip­ció, que per­met sin­to­nit­zar diver­ses agen­des. Grà­cies a eines com aquesta ja podem tenir tran­quil·lament la nos­tra agenda a Inter­net i sin­cro­nit­zar-la amb qual­se­vol tipus de dis­po­si­tiu: Sym­bian, Win­dows Mobile, o fins i tot Black­berry, és a dir, amb mòbils, PDA, PC de but­xaca o Palm.</div>
+</li>
+<li class="level2"><div class="li"> Gmo­bi­leSync, un pro­grama sen­zill que també per­met la comu­ni­ca­ció del PDA amb el calen­dari de Goo­gle. És un pro­grama gra­tuït i per­met que totes les cites, tas­ques i esde­ve­ni­ments regis­trats en el Goo­gle Calen­dar siguin trans­fe­rits i inclo­sos en el PDA (de tipus PC de but­xaca). En la <span class="figref"><a href="#Figure49"><span>figura</span>.31</a></span> podeu veure una mos­tra del pro­cés de sin­cro­nit­za­ció.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure49"></a><figure>
+<figcaption style="width: 242px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Pro­cés de sin­cro­nit­za­ció amb GMo­bi­leSync
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_55.png" alt="" style=""></figure>
+</div>
+<p>
+Així, una vegada ins­tal·lat aquest pro­grama en el PDA, s’exe­cu­tarà des d’aquí i, intro­duint les dades d’usu­ari i con­tra­se­nya del Gmail, sin­cro­nit­za­rem tots dos calen­da­ris. D’aquesta manera, cada cop que intro­duïm algun esde­ve­ni­ment en el PDA o en el Goo­gle Calen­dar i exe­cu­tem el pro­grama per sin­cro­nit­zar-los tots dos, dis­po­sa­rem de les dades intro­du­ï­des en tots dos llocs d’una manera actu­a­lit­zada.
+</p>
+
+<p>
+Per aca­bar, cal tenir en compte que si uti­lit­zem l’últim dis­po­si­tiu del Goo­gle, Android, hi acce­di­rem direc­ta­ment des de l’escrip­tori, ja que és una de les apli­ca­ci­ons que apa­rei­xen en la pan­ta­lla per defecte. D’aquesta manera, ens estal­vi­a­rem tenir dife­rents calen­da­ris i haver-los d’actu­a­lit­zar, com també ins­tal·lar altres pro­gra­mes de sin­cro­nit­za­ció, ja que el Goo­gle Calen­dar és acces­si­ble tant des del lloc web com des del mateix telè­fon Android. En la <span class="figref"><a href="#Figure50"><span>figura</span>.32</a></span> es veu un exem­ple d’aquest model.
+</p>
+<div class="iocfigure"><a name="Figure50"></a><figure>
+<figcaption style="width: 319px; max-width: 75%;"><span class="figuretitle">Figura</span>
+
+Inter­fí­cie del dis­po­si­tiu mòbil Android
+
+</figcaption><img src="./a2 continguts_files/gadm07u1_56.png" alt="" style=""></figure>
+</div>
+<p>
+Tota aquesta tec­no­lo­gia és tan sum­ma­ment recent i avança a tal velo­ci­tat que, en el moment de publi­car els mate­ri­als, en el mer­cat hi ha l’última ver­sió Win­dows Mobile 6.5, amb una inter­fí­cie redis­se­nyada i un sis­tema de reco­nei­xe­ment tàc­til. L’objec­tiu ha estat millo­rar la intu­ï­ti­vi­tat dels menús i la pre­sèn­cia d’una “tenda” d’apli­ca­ci­ons. Tot això és neces­sari si vol fer la com­pe­tèn­cia a l’iPhone d’Apple.
+</p>
+
+<p>
+De la mateixa manera, mol­tes mar­ques estan can­vi­ant de sis­tema ope­ra­tiu, com, per exem­ple, Sam­sung, que deixa d’uti­lit­zar Win­dows Mobile i fa ser­vir Sym­bian. D’altra banda, per exem­ple, Moto­rola aban­dona Sym­bian i ara uti­litza Android i Win­dows Mobile.
+</p>
+
+<p>
+En resum, a l’hora d’esco­llir un dis­po­si­tiu deter­mi­nat hau­rem d’estu­diar amb dete­ni­ment qui­nes neces­si­tats tenim.
+</p>
+
+</div>
+
+<h2>Lliurament:</h2>
+<p>Explica amb les teves paraules els 3 conceptes o punts que hagis trobat més interessants de tota la pàgina.
+</p>
+
+
+	 </article>
+
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+
+
+
+<div id="HyphenatorToggleBox" class="donthyphenate" style="position: absolute; top: 0px; right: 0px; margin: 0px; background-color: rgb(170, 170, 170); color: rgb(255, 255, 255); font: 6pt Arial; letter-spacing: 0.2em; padding: 3px; cursor: pointer; border-bottom-left-radius: 4px;">Hy-phen-a-tion</div></body></html>

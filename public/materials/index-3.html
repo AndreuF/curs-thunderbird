@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107) -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="ca"><!--<![endif]--><!-- the "no-js" class is for Modernizr. -->
+<head id="www-sitename-com" data-template-set="html5-reset"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Aplicacions ofimàtiques</title>
+
+<!-- <meta name="title" content=""> -->
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Aplicacions ofimàtiques">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+
+	<link rel="apple-touch-icon" href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="./a2 exercicis_files/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="./a2 exercicis_files/jquery-ui.css">
+
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="./a2 exercicis_files/modernizr-1.7.min.js"></script>
+	<script src="./a2 exercicis_files/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="./a2 exercicis_files/build.js" type="text/javascript"></script>
+
+		<link rel="stylesheet" media="all" type="text/css" href="css/cssff6e.css?s=all&amp;t=estatic" />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/css6139.css?t=estatic" />
+		<link rel="stylesheet" media="print" type="text/css" href="css/css6f71.css?s=print&amp;t=estatic" />
+		<link rel="stylesheet" media="all" type="text/css" href="css/mystyle.css" />
+		<link rel="shortcut icon" href="ico/favicon.ico" />
+</head>
+
+
+
+<body class="style-newspaper" style="background-position: 0px 0px;">
+
+
+
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+
+   <div id="upbutton" class="upbutton" style="display: none;"><img src="./a2 exercicis_files/uparrow.png" alt="Pujar a l&#39;inici de pàgina"></div>
+
+   <section>
+     <div id="toc" class="hidden" style="left: 0px;">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/WebContent/u2/introducci%C3%B3.html">2. El correu i l'agenda electrònica</a></p><ul class="expander"><li id="u2introducció"><a href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/WebContent/u2/resultats.html">Resultats de l'aprenentatge i criteris d'avaluació</a></li><li id="u2referencies"><a href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/WebContent/u2/a1/continguts.html">Gestió de correu i agenda electrònica</a><span class="buttonexp"></span></p><ul style="display: none;"><li id="u2a1activitats"><a href="">Activitats</a></li><li id="u2a1exercicis"><a href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="materials/FP/Materials/2201_SMX/SMX_2201_M03/web/html/index.html">Anar a l'índex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden" style="left: 0px;">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper active"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 40%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 40%;"></a></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 50%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 50%;"></a></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" checked="checked"><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" checked="checked"><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment"><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" checked="checked"><label for="text-hyphen">Partició sil·làbica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al menú de navegació</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la pàgina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la pàgina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l'ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegació</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l'índex general</li>
+    <li><span class="shortcut">t</span>: Anar a l'inici de pàgina</li>
+    <li><span class="shortcut">b</span>: Anar al final de pàgina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la pàgina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la pàgina</li>
+    <li><span class="shortcut">h</span>: Anar a la pàgina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la pàgina següent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet text-normal text-left medium" style="padding-bottom: 170px; counter-reset: counth1 0;">
+
+			 <div class="headermain">
+			 	<!--<a href="http://ateneu.xtec.cat/wikiform/wikiexport"><span class="logoateneu"></span></a>-->
+			 	<div class="titol">UF2. Gestió de correu i agenda electrònica</div>
+			 	<div class="subtitol"></div>
+			 </div>
+
+			 <div class="navega">
+			 	<div id="navcontainer">
+			 		<ul id="navlist">
+			 			<li class="nodisc"><a href="index-2.html">Pt. 1</a></li>
+			 			<li class="nodisc"><a href="index-3.html">Pt. 2</a></li>
+
+			 		</ul>
+			 	</div>
+			 </div>
+
+        <h1>Pt. 2 - Acti­vi­tats</h1>
+
+<h2 class="nocount">Ins­tal·lar el Mozi­lla Thun­der­bird<span name="check" style="display: none;"></span><span class="star" name="star" style="display: none;"></span></h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com s’ins­tal·la el Mozi­lla Thun­der­bird.
+</p>
+
+<p>
+Tot seguit ins­tal·larem el Mozi­lla Thun­der­bird per poder-lo con­fi­gu­rar. No és l’única apli­ca­ció del mer­cat, però, a més de ser gra­tu­ïta, pot ser­vir per apren­dre a con­fi­gu­rar-ne qual­se­vol altra.
+</p>
+
+<p>
+Abans d’ins­tal·lar qual­se­vol pro­gra­mari, hem de com­pro­var si el nos­tre maqui­nari com­pleix el requi­sits mínims d’ins­tal·lació. Cer­queu els requi­sits de la ver­sió que ins­tal·lareu de Mozi­lla Thun­der­bird segons el vos­tre sis­tema ope­ra­tiu.
+</p>
+<ul>
+<li class="level1"><div class="li"> Aneu a la pàgina ofi­cial de Mozi­lla Thun­der­bird: <a href="http://www.mozillamessaging.com/en-US/thunderbird/all.html" class="urlextern" title="http://www.mozillamessaging.com/en-US/thunderbird/all.html" rel="nofollow">http://​www.​mozillamessaging.​com/​en-US/​thunderbird/​all.​html</a>. Aquí podeu tro­bar el paquet ins­tal·lable en totes les lle­gües dis­po­ni­bles i en els sis­te­mes ope­ra­tius que suporta (Win­dows, Mac <acronym title="Operating System">OS</acronym> X i Linux).</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_01.jpg" title="ic10m3uf2u2_01.jpg" alt="ic10m3uf2u2_01.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 669px;"></div></div><ul>
+<li class="level1"><div class="li"> Deseu l’arxiu cor­res­po­nent al vos­tre ordi­na­dor i exe­cu­teu-lo.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> L’assis­tent de l’ins­tal·lador us dema­narà, pri­mer, si voleu una ins­tal·lació estàn­dard o per­so­na­lit­zada. També si voleu que sigui la vos­tra apli­ca­ció de cor­reu per defecte.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 501px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_02.jpg" title="ic10m3uf2u2_02.jpg" alt="ic10m3uf2u2_02.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 501px;"></div></div>
+<p>
+En cas de triar la per­so­na­lit­zada, podrem indi­car el lloc en què s’ins­tal·larà l’apli­ca­ció (per defecte és el direc­tori que veieu en la imatge), i opci­ons sobre ico­nes i acces­sos direc­tes.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 503px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_03.jpg" title="ic10m3uf2u2_03.jpg" alt="ic10m3uf2u2_03.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 503px;"></div></div><ul>
+<li class="level1"><div class="li"> Ara exe­cu­tem per pri­mer cop l’apli­ca­ció. Ens sor­tirà l’auxi­liar d’impor­ta­ció. Com que volem apren­dre a con­fi­gu­rar l’apli­ca­ció, tri­a­rem l’opció No impor­tis res.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 446px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_04.jpg" title="ic10m3uf2u2_04.jpg" alt="ic10m3uf2u2_04.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 446px;"></div></div><ul>
+<li class="level1"><div class="li"> Ara s’ini­cia un nou assis­tent, que ens per­me­trà con­fi­gu­rar el compte de cor­reu. De nou el can­cel·lem, ja que ho farem tot des del pro­grama mateix.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 631px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_05.jpg" title="ic10m3uf2u2_05.jpg" alt="ic10m3uf2u2_05.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 631px;"></div></div><ul>
+<li class="level1"><div class="li"> Ja tenim la inter­fí­cie de l’apli­ca­ció de cor­reu.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_06.jpg" title="ic10m3uf2u2_06.jpg" alt="ic10m3uf2u2_06.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 669px;"></div></div>
+</div>
+
+<h2>Con­fi­gu­rar un compte web</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com es con­fi­gura un compte web.
+</p>
+
+<p>
+Per con­fi­gu­rar un compte web en el nos­tre Thun­der­bird neces­si­ta­rem crear un compte de cor­reu Gmail per poder fer les pro­ves amb el Thun­der­bird. Si ja en teniu un, el podeu fer ser­vir, però reco­mano fer-ne un de nou per evi­tar pèr­dues poste­ri­ors. També podeu uti­lit­zar un compte ser­vit pel vos­tre pro­ve­ï­dor d’Inter­net o el de la feina, si teniu les dades següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Usu­ari i con­tra­se­nya</div>
+</li>
+<li class="level2"><div class="li"> Ser­vi­dor IMAP de cor­reu entrant</div>
+</li>
+<li class="level2"><div class="li"> Ser­vi­dor SMTP de cor­reu sor­tint</div>
+</li>
+</ul>
+
+<p>
+Les ins­truc­ci­ons següents s’han redac­tat per a un compte de Gmail. Ade­qüeu les ins­truc­ci­ons a les vos­tres neces­si­tats si voleu con­fi­gu­rar un compte dife­rent.
+</p>
+
+<p>
+* Pri­mer anem al menú Fit­xer\Nou\Compte de cor­reu.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 450px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_08.jpg" title="ic10m3uf2u2_08.jpg" alt="ic10m3uf2u2_08.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 450px;"></div></div><ul>
+<li class="level1"><div class="li"> Ens surt una fines­tra on hem d’escriure el nos­tre nom (el que volem que es reflec­teixi quan enviem cor­reus), la nos­tra adreça de cor­reu elec­trò­nic i la con­tra­se­nya d’accés. Si no volem haver d’intro­duir la con­tra­se­nya cada cop que volem bai­xar el cor­reu, acti­va­rem l’opció Recorda la con­tra­se­nya. Un cop aca­bat, cli­quem a Con­ti­nua.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 631px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_09.jpg" title="ic10m3uf2u2_09.jpg" alt="ic10m3uf2u2_09.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 631px;"></div></div><ul>
+<li class="level1"><div class="li"> Els comp­tes de Gmail són tan popu­lars que Thun­der­bird ja coneix els ser­vi­dors i els ports que fan ser­vir.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 631px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_10.jpg" title="ic10m3uf2u2_10.jpg" alt="ic10m3uf2u2_10.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 631px;"></div></div>
+<p>
+Si no és el cas, o no estem d’acord amb el que reflec­teix la fines­tra, hem de cli­car a Con­fi­gu­ra­ció manual. El que surt lla­vors són les opci­ons de parà­me­tres del compte, a les quals també podem acce­dir des del menú de l’apli­ca­ció.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_11.jpg" title="ic10m3uf2u2_11.jpg" alt="ic10m3uf2u2_11.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 669px;"></div></div>
+<p>
+Hau­ríem de con­fi­gu­rar el nom del ser­vi­dor IMAP i el port, el direc­tori local i el ser­vi­dor de sor­tida SMTP per poder enviar cor­reus.
+</p>
+
+</div>
+
+<h2>Con­fi­gu­rar un cor­reu POP</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com es con­fi­gura un cor­reu POP.
+</p>
+
+<p>
+Con­fi­gu­rar un cor­reu POP és molt sem­blant a con­fi­gu­rar un cor­reu IMAP. L’únic pro­blema és que com que solen tenir ser­vi­dors menys cone­guts (la majo­ria), el Thun­der­bird no ens donarà els parà­me­tres auto­mà­ti­ca­ment com pas­sava amb la majo­ria d’IMAP. En aquest cas, també farem ser­vir un cor­reu que habi­tu­al­ment s’ha con­si­de­rat com a web, però que des de fa un quant temps ja té suport POP3. Es tracta de Hot­mail. Com en el cas ante­rior, per fer pro­ves us reco­mano crear un nou compte de cor­reu, tret que no us importi que els vos­tres cor­reus el baixi al vos­tre ordi­na­dor (recor­deu que és la filo­so­fia del pro­to­col POP). Com que Hot­mail és més que cone­gut, no ens cal­drà cap tipus d’infor­ma­ció espe­cial. Però si en voleu con­fi­gu­rar un d’un altre ser­vi­dor neces­si­ta­reu:
+</p>
+<ul>
+<li class="level1"><div class="li"> Usu­ari i con­tra­se­nya</div>
+</li>
+<li class="level2"><div class="li"> Ser­vi­dor POP de cor­reu entrant</div>
+</li>
+<li class="level2"><div class="li"> Ser­vi­dor SMTP de cor­reu sor­tint</div>
+</li>
+</ul>
+
+<p>
+Les ins­truc­ci­ons següents s’han redac­tat per a un compte de Gmail. Ade­qüeu les ins­truc­ci­ons a les vos­tres neces­si­tats si voleu con­fi­gu­rar un compte dife­rent.
+</p>
+<ul>
+<li class="level1"><div class="li"> Pri­mer anem al menú Fit­xer\Nou\Compte de cor­reu.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Ens surt una fines­tra on hem d’escriure el nos­tre nom (el que volem que es reflec­teixi quan enviem cor­reus), la nos­tra adreça de cor­reu elec­trò­nic i la con­tra­se­nya d’accés. Si no volem haver d’intro­duir la con­tra­se­nya cada cop que volem bai­xar el cor­reu, acti­va­rem l’opció Recorda la con­tra­se­nya. Un cop aca­bat, cli­quem a Con­ti­nua.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 631px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_12.jpg" title="ic10m3uf2u2_12.jpg" alt="ic10m3uf2u2_12.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 631px;"></div></div><ul>
+<li class="level1"><div class="li"> Els comp­tes de Gmail són tan popu­lars que Thun­der­bird ja coneix els ser­vi­dors i els ports que fan ser­vir.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 631px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_13.jpg" title="ic10m3uf2u2_13.jpg" alt="ic10m3uf2u2_13.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 631px;"></div></div>
+<p>
+Si no és el cas, o no estem d’acord amb el que reflec­teix la fines­tra, hem de cli­car a Con­fi­gu­ra­ció manual. El que surt lla­vors són les opci­ons de parà­me­tres del compte, a les quals també podem acce­dir des del menú de l’apli­ca­ció.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 669px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_14.jpg" title="ic10m3uf2u2_14.jpg" alt="ic10m3uf2u2_14.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 669px;"></div></div>
+<p>
+Hau­ríem de con­fi­gu­rar el nom del ser­vi­dor IMAP i el port, el direc­tori local i el ser­vi­dor de sor­tida SMTP per poder enviar cor­reus.
+</p>
+
+<p>
+Tant si hem afe­git un compte POP com si és IMAP, l’aspecte de la pàgina prin­ci­pal de l’apli­ca­ció ha variat. Recor­deu la dife­rèn­cia prin­ci­pal entre els dos tipus: amb l’IMAP, hau­rem de tenir con­ne­xió en tot moment per lle­gir, esbor­rar i redac­tar mis­sat­ges. En canvi, amb POP, podem bai­xar el cor­reu amb con­ne­xió i a par­tir d’aquí lle­gir i esbor­rar sense estar con­nec­tats. A més, podem res­pon­dre o redac­tar els nos­tres cor­reus i enviar-los tots d’una quan ens tor­nem a con­nec­tar.
+</p>
+
+</div>
+
+<h2>Crear un mis­satge</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com crear un mis­satge de cor­reu.
+</p>
+
+<p>
+Per crear un mis­satge de cor­reu a més d’una per­sona cal­drà conèi­xer l’adreça de cor­reu elec­trò­nic dels des­ti­na­ta­ris (tal com passa amb el cor­reu tra­di­ci­o­nal). Mit­jan­çant el camp “Assumpte”, dona­rem una idea al des­ti­na­tari de què es troba al cor­reu. Per enviar cor­reus, ho podem fer des de la icona que hi ha a la barra d’eines:
+</p>
+
+<p>
+I tenim la fines­tra següent:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 601px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_23.jpg" title="ic10m3uf2u2_23.jpg" alt="ic10m3uf2u2_23.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 601px;"></div></div>
+<p>
+Obser­veu que a De: tenim un des­ple­ga­ble. Aquí sor­ti­ran totes les adre­ces en què hem con­fi­gu­rat el pro­to­col de sor­tida SMTP.
+</p>
+
+<p>
+El camp A: també conté un des­ple­ga­ble on tenim les opci­ons d’A:, CC:, CCO:, etc.
+</p>
+
+<p>
+Emple­na­rem l’assumpte i lla­vors podrem escriure el nos­tre mis­satge.
+</p>
+
+<p>
+En la barra d’eines tenim unes opci­ons com el cor­rec­tor orto­grà­fic, l’opció d’adjun­tar un arxiu o pàgina web, unes opci­ons de segu­re­tat (a uti­lit­zar només si sabeu el que feu) i un menú Desa que us per­me­trà desar el mis­satge com a plan­ti­lla (si l’heu de fer ser­vir sovint), com a esbor­rany (si és que encara no està com­plet) o com un arxiu.
+</p>
+
+<p>
+Per aca­bar, farem clic a Envia per posar-lo en la safata de sor­tida. Segons el pro­to­col de sor­tida, s’envi­arà auto­mà­ti­ca­ment (IMAP) o espe­rarà a tenir con­ne­xió (POP).
+</p>
+
+<p>
+Els mis­sat­ges envi­ats o a punt per ser envi­ats que­den desats en la car­peta Safata de sor­tida.
+</p>
+
+</div>
+
+<h2>Clas­si­fi­car els cor­reus</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com clas­si­fi­car els cor­reus.
+</p>
+
+<p>
+Un cop hem con­fi­gu­rat el nos­tre compte POP, l’apli­ca­tiu cerca al ser­vi­dor els mis­sat­ges per des­car­re­gar-los. Ara que tenim cor­reus, els hem de clas­si­fi­car i desar, o llen­çar a la pape­rera. Els cri­te­ris per fer-ho depe­nen de nosal­tres i les nos­tres neces­si­tats. Per ges­ti­o­nar-ho, tenim un sis­tema de car­pe­tes, tal com mos­tra la imatge. Fixeu-vos sobre­tot en l’apar­tat de les car­pe­tes intel·ligents:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_15.jpg" title="ic10m3uf2u2_15.jpg" alt="ic10m3uf2u2_15.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+S’han creat algu­nes car­pe­tes auto­mà­ti­ca­ment com la Safata d’entrada, la Pape­rera o la pàgina d’inici de provaioc@​hotmail.​com.
+</p>
+
+<p>
+Abans de con­ti­nuar, con­fi­gu­ra­rem una opció per­què el nos­tre anti­vi­rus pugui veri­fi­car que no hi ha perill en els cor­reus que hem rebut. Aneu a Eines\Opci­ons i allà trieu la pes­ta­nya Anti­vi­rus. Si l’opció Per­met que els pro­gra­mes anti­vi­rus posin en qua­ran­tena mis­sat­ges d’entrada indi­vi­dual no està acti­vada, acti­veu-la.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 554px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_16.jpg" title="ic10m3uf2u2_16.jpg" alt="ic10m3uf2u2_16.jpg"></figure>
+<div class="footfigure" style="max-width: 75%; width: 554px;"></div></div>
+<p>
+Les car­pe­tes són un mitjà de clas­si­fi­ca­ció de mis­sat­ges molt efec­tiu. Mozi­lla Thun­der­bird per­met com­bi­nar més d’un cor­reu elec­trò­nic i, per tant, tin­drem la neces­si­tat d’orde­nar-los per saber d’on han vin­gut i pot­ser vol­drem desar-los segons qui l’envia o segons el con­tin­gut. Per fer-ho, a con­ti­nu­a­ció enten­drem millor l’estruc­tura de car­pe­tes:
+</p>
+<ul>
+<li class="level1"><div class="li"> A la safata d’entrada hi ha tots els mis­sat­ges que hagin arri­bat a tots els comp­tes de cor­reu con­fi­gu­rats. Per tant, esta­ran bar­re­jats.</div>
+</li>
+<li class="level2"><div class="li"> A provaioc@​hotmail.​com hi seran els que s’han enviat a aquesta adreça.</div>
+</li>
+<li class="level2"><div class="li"> A la pape­rera, de nou tenim una bar­reja de mis­sat­ges.</div>
+</li>
+<li class="level2"><div class="li"> També a la safata de sor­tida tenim mis­sat­ges que s’han d’enviar per qual­se­vol de les adre­ces con­fi­gu­ra­des.</div>
+</li>
+</ul>
+
+<p>
+Ara cre­a­rem una sub­car­peta que pengi de provaioc@​hotmail.​com, on des­a­rem, per exem­ple, els mis­sat­ges que par­lin del mòdul 3:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fem clic amb el botó de la dreta a la zona de car­pe­tes.</div>
+</li>
+<li class="level1"><div class="li"> Triem Crea una car­peta…</div>
+</li>
+<li class="level1"><div class="li"> Posem el nom a la nova car­peta i triem de quina de les car­pe­tes que tenim volem que pengi.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_17.jpg" title="ic10m3uf2u2_17.jpg" alt="ic10m3uf2u2_17.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+El resul­tat hau­ria de ser com en la imatge següent:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_18.jpg" title="ic10m3uf2u2_18.jpg" alt="ic10m3uf2u2_18.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Per posar-hi cor­reus, només cal­drà arros­se­gar-los des de la part dreta i dei­xar-los “caure” en la car­peta que vul­guem. Vegem-ho amb un exem­ple:
+</p>
+
+<p>
+El mis­satge que ha arri­bat és a la Safata d’entrada. Hi fem clic i el lle­gim:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_19.jpg" title="ic10m3uf2u2_19.jpg" alt="ic10m3uf2u2_19.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+El selec­ci­o­nem i l’arros­se­guem fins a la car­peta Modul3. Ara ha des­a­pa­re­gut de la safata d’entrada.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_20.jpg" title="ic10m3uf2u2_20.jpg" alt="ic10m3uf2u2_20.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+I ara és en la car­peta Mòdul3.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_21.jpg" title="ic10m3uf2u2_21.jpg" alt="ic10m3uf2u2_21.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+</div>
+
+<h2>Cor­reu brossa</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com trac­tar el cor­reu brossa.
+</p>
+
+<p>
+El cor­reu que no vol­dríem rebre, i que nor­mal­ment conté publi­ci­tat i no és gaire fia­ble és el cor­reu brossa. Thun­der­bird té fil­tres adap­ta­tius (que van apre­nent depe­nent de les vos­tres deci­si­ons) per reco­nèi­xer aquest tipus de cor­reus i posar-los en una car­peta dife­rent, esbor­rar-los o fer l’acció que pre­de­ter­mi­neu. Vegem com podeu acce­dir a aques­tes opci­ons:
+</p>
+<ul>
+<li class="level1"><div class="li"> Aneu a Eines\Parà­me­tres dels comp­tes, i trieu el cor­reu en el qual vul­gueu con­fi­gu­rar el cor­reu brossa (hi pot haver con­fi­gu­ra­ci­ons dife­rents per a cada cor­reu que tin­gueu).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Trieu l’opció Parà­me­tres del cor­reu brossa:</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_34.jpg" title="ic10m3uf2u2_34.jpg" alt="ic10m3uf2u2_34.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div><ul>
+<li class="level1"><div class="li"> El pri­mer és habi­li­tar els con­trols adap­ta­tius de cor­reu brossa per a aquest compte.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Tenim l’opció que no mar­qui els mis­sat­ges com a cor­reu brossa si el remi­tent és en la lli­breta d’adre­ces que triem a con­ti­nu­a­ció. Aquesta opció és molt útil, ja que si un con­tacte és en la lli­breta, se suposa que volem rebre cor­reus d’ell.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> L’opció següent us per­met dei­xar a cri­teri de Spa­mAs­sas­sin o Spam­Pal (per triar) la deci­sió de si un cor­reu és brossa o no ho és.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Per aca­bar, hem d’indi­car on volem que es moguin els cor­reus que han estat mar­cats com a cor­reu brossa. També s’inclou l’opció d’esbor­rar aquests mis­sat­ges al cap d’uns dies. Aquesta última opció és per­què pugueu com­pro­var que en la car­peta no hi ha mis­sat­ges que us interes­sen abans d’esbor­rar-los auto­mà­ti­ca­ment.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Ara, cal anar a Eines\Opci­ons i triar la pes­ta­nya Cor­reu brossa.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_35.jpg" title="ic10m3uf2u2_35.jpg" alt="ic10m3uf2u2_35.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div><ul>
+<li class="level1"><div class="li"> Aques­tes opci­ons són per auto­ma­tit­zar pro­ces­sos quan l’usu­ari marca un cor­reu com a brossa. Les opci­ons són sen­zi­lles però és impor­tant posar-les al nos­tre gust, ja que si habi­li­tem l’última opció (Habi­lita el regis­tre del cor­reu brossa), cada cop que mar­quen un cor­reu com a brossa, el Thun­der­bird aprèn, i el fil­tre que hem expli­cat abans fun­ci­o­narà molt millor.</div>
+</li>
+</ul>
+
+</div>
+
+<h2>Fil­tres</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com crear fil­tres al cor­reu.
+</p>
+
+<p>
+Els fil­tres ens per­me­ten clas­si­fi­car els cor­reus així que els rebem, de manera que depe­nent de qui els envia pas­sen direc­ta­ment a una car­peta o una altra.
+</p>
+<ul>
+<li class="level1"><div class="li"> Creem una car­peta que depen­gui del cor­reu elec­trò­nic que volem fil­trar.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Anem a Eines\Fil­tres de mis­satge.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_36.jpg" title="ic10m3uf2u2_36.jpg" alt="ic10m3uf2u2_36.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div><ul>
+<li class="level1"><div class="li"> Triem el cor­reu per al qual volem crear el fil­tre (en la imatge provaioc@​hotmail.​com) i fem clic a Nou…</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Ara cre­a­rem el fil­tre, posant-hi el nom (per reco­nèi­xer-lo en la llista) i des­prés tri­ant quins cri­te­ris farem ser­vir per fil­trar i què farem amb els mis­sat­ges fil­trats.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_37.jpg" title="ic10m3uf2u2_37.jpg" alt="ic10m3uf2u2_37.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Poseu aten­ció que l’opció Aplica el fil­tre quan esti­gui en la posi­ció que veieu en la imatge, ja que d’aquesta manera el fil­tre s’apli­carà tant manu­al­ment com auto­mà­ti­ca­ment quan es rebin mis­sat­ges.
+</p>
+
+<p>
+Si reme­neu una mica en les opci­ons de fil­tre i d’acci­ons, veu­reu que hi ha mol­tes opci­ons. El més habi­tual és que els fil­tres es facin de mica en mica, de manera de cada cop siguin més acu­rats. Din­tre de les acci­ons, n’hi ha que són irre­ver­si­bles i, per tant, s’haurà d’anar amb molt de compte en triar-les.
+</p>
+
+<p>
+En el cas de l’exem­ple de la imatge, el que farà és posar tots els cor­reus que tin­guin un remi­tent que conté ioc a la car­peta IOC que depèn de provaioc@​hotmail.​com.
+</p>
+
+</div>
+
+<h2>Crear un con­tacte a la lli­breta d'adre­ces</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com crear un con­tacte a la lli­breta d’adre­ces.
+</p>
+
+<p>
+Podem intro­duir un nou con­tacte a la lli­breta d’adre­ces, afe­gint si es vol més infor­ma­ci­ons com ara telè­fons, bus­ca­per­so­nes, foto­gra­fies, etc. Això ens dóna més infor­ma­ció i a més ens per­met tenir una agenda deta­llada dels nos­tres con­tac­tes. Fixeu-vos bé en totes les opci­ons i pes­ta­nyes que té la fines­tra i ompliu les dades segons les vos­tres neces­si­tats. Per fer-ho, fem clic a Crea un con­tacte.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_25.jpg" title="ic10m3uf2u2_25.jpg" alt="ic10m3uf2u2_25.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Omplim les dades, però sobre­tot la que més ens interessa és la de l’adreça elec­trò­nica. Un cop hem escrit la infor­ma­ció en les dife­rents pes­ta­nyes, veri­fi­quem en quina cate­go­ria volem afe­gir l’adreça (en el cas de la imatge és la Lli­breta d’adre­ces per­so­nals).
+</p>
+
+<p>
+Veiem com les adre­ces que afe­gim es posen a la part de dalt, i a sota es mos­tra la infor­ma­ció de l’adreça que esti­gui selec­ci­o­nada en aquest moment.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_26.jpg" title="ic10m3uf2u2_26.jpg" alt="ic10m3uf2u2_26.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Fixeu-vos que, fins i tot, hi podem posar una foto. Si volem edi­tar les dades, només cal selec­ci­o­nar l’adreça en qües­tió i fer clic en el botó Pro­pi­e­tats de la barra d’eines. També tenim l’opció de supri­mir el compte (Supri­meix) o enviar un cor­reu elec­trò­nic (Redacta).
+</p>
+
+<p>
+Vegem l’última opció de la barra d’eines: Crea una llista. Aquesta opció ens per­met crear llis­tes d’adre­ces (per exem­ple, Amics, Com­panys de l’IOC, Veïns, etc.). El seu aspecte és el següent:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_27.jpg" title="ic10m3uf2u2_27.jpg" alt="ic10m3uf2u2_27.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Pri­mer posa­rem el nom a la llista, el sobre­nom (si volem) i la des­crip­ció (també opci­o­nal). Des­prés, només cal comen­çar a escriure les adre­ces i el pro­grama les acaba de com­ple­tar si són en la lli­breta d’adre­ces.
+</p>
+
+<p>
+Vegem com queda en la lli­breta d’adre­ces. Fixeu-vos en la icona, que és dife­rent de la d’un con­tacte indi­vi­dual:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_28.jpg" title="ic10m3uf2u2_28.jpg" alt="ic10m3uf2u2_28.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+A par­tir d’ara, sem­pre que escri­guem una adreça en redac­tar un cor­reu elec­trò­nic, el Thun­der­bird mirarà la lli­breta de cor­reu i la inten­tarà com­ple­tar, de manera que ens estal­vi­a­rem haver d’escriure tota l’adreça.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_29.jpg" title="ic10m3uf2u2_29.jpg" alt="ic10m3uf2u2_29.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+</div>
+
+<h2>Impor­tar la lli­breta d'adre­ces</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer com impor­tar la lli­breta d’adre­ces.
+</p>
+
+<p>
+En cas que ja tin­guem un ges­tor de cor­reu ins­tal·lat, podem impor­tar la lli­breta d’adre­ces del ges­tor. Per fer-ho, hem d’anar a Eines\Importa.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_30.jpg" title="ic10m3uf2u2_30.jpg" alt="ic10m3uf2u2_30.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Triem l’opció de Lli­bre­tes d’adre­ces i fem clic a Enda­vant. Ara se’ns demana de quina apli­ca­ció volem impor­tar la lli­breta d’adre­ces. L’última opció, Text, és una impor­ta­ció des d’un arxiu en for­mat LDIF, o deli­mi­tat per comes o tabu­la­ci­ons.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_31.jpg" title="ic10m3uf2u2_31.jpg" alt="ic10m3uf2u2_31.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+</div>
+
+<h2>Fun­ci­o­na­li­tats d'un pro­gra­mari d'agenda</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer les fun­ci­o­na­li­tats d’un pro­gra­mari d’agenda.
+</p>
+
+<p>
+Per des­co­brir totes les fun­ci­o­na­li­tats d’un pro­gra­mari d’agenda, farem ser­vir el Mozi­lla Sun­bird. Es pot bai­xar en català des de:
+</p>
+
+<p>
+<a href="http://www.mozilla.org/projects/calendar/sunbird/l10n_download.html" class="urlextern" title="http://www.mozilla.org/projects/calendar/sunbird/l10n_download.html" rel="nofollow">http://​www.​mozilla.​org/​projects/​calendar/​sunbird/​l10n_​download.​html</a>.
+</p>
+
+<p>
+Trieu l’ idi­oma que voleu i el sis­tema ope­ra­tiu que teniu. Si el voleu can­viar de llen­gua, podeu bai­xar en aquesta mateixa pàgina els paquets d’idi­oma que vul­gueu. Deseu els arxius en el disc dur i un cop fina­lit­zada la bai­xada cli­queu a sobre de l’ins­tal·lador. S’obre l’assis­tent:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_44.jpg" title="ic10m3uf2u2_44.jpg" alt="ic10m3uf2u2_44.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+En la pàgina següent hi ha els ter­mes de la lli­cèn­cia d’explo­ta­ció.
+</p>
+
+<p>
+Un cop accep­tats els ter­mes, podeu triar entre una ins­tal·lació estàn­dard o per­so­na­lit­zada. En cas de triar l’estàn­dard, ja hau­rem aca­bat la ins­tal·lació. Les opci­ons que podem per­so­na­lit­zar són el direc­tori, l’apli­ca­ció, la cre­a­ció d’ico­nes i acces­sos direc­tes, i el nom del grup de pro­grama en el menú inici.
+</p>
+
+<p>
+Si exe­cu­tem el Sun­bird, tenim aquesta pan­ta­lla prin­ci­pal:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_45.jpg" title="ic10m3uf2u2_45.jpg" alt="ic10m3uf2u2_45.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Ara comen­ça­rem veien les dife­rents vis­tes que té. En la barra d’eines, tenim les dife­rents vis­tes.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_46.jpg" title="ic10m3uf2u2_46.jpg" alt="ic10m3uf2u2_46.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div><ul>
+<li class="level1"><div class="li"> Vista dià­ria.</div>
+</li>
+<li class="level2"><div class="li"> Vista set­ma­nal.</div>
+</li>
+<li class="level2"><div class="li"> Vista mul­ti­set­ma­nal (són qua­tre set­ma­nes con­tant l’actual).</div>
+</li>
+<li class="level2"><div class="li"> Vista men­sual.</div>
+</li>
+</ul>
+
+<p>
+Aques­tes opci­ons i d’altres sobre el mode de pre­sen­tar la infor­ma­ció les podem tro­bar en el menú Visu­a­litza.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_47.jpg" title="ic10m3uf2u2_47.jpg" alt="ic10m3uf2u2_47.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Per afe­gir una nova cita ho farem mit­jan­çant la icona de la barra d’eines cor­res­po­nent o bé des del menú Fit­xer. Lla­vors s’obre la fines­tra següent:
+</p>
+
+<p>
+Hi posa­rem el títol de la cita, el lloc on es farà, la cate­go­ria (ens dóna a triar entre mol­tes opci­ons) i el calen­dari (ara només hi ha el d’inici, però se’n poden crear de nous). També podrem dir si és una cita de tot el dia o si té inici i final, i espe­ci­fi­car-ho. Les opci­ons de repe­ti­ció són espe­ci­al­ment útils per a esde­ve­ni­ments peri­ò­dics i fets habi­tu­als; aquí també són molt impor­tants el gran ven­tall d’opci­ons de repe­ti­ció, fins i tot con­fi­gu­ra­bles per vosal­tres matei­xos. Podem posar un recor­da­tori (uns minuts, unes hores o uns dies abans) en forma de soroll o mis­satge i, per aca­bar, hi posa­rem la des­crip­ció.
+</p>
+
+<p>
+Aquesta fines­tra té una barra d’eines on podem desar la cita i tan­car la fines­tra, con­vi­dar gent (aquesta opció la veu­rem més enda­vant), triar opci­ons de pri­va­desa (per no mos­trar certs detalls) i, per aca­bar, ens per­met adjun­tar arxius.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_49.jpg" title="ic10m3uf2u2_49.jpg" alt="ic10m3uf2u2_49.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Un cop selec­ci­o­nada (com en la imatge, amb una vista set­ma­nal), podem esbor­rar (Supri­meix) o edi­tar la cita (Edita) mit­jan­çant l’eina cor­res­po­nent de la barra supe­rior.
+</p>
+
+<p>
+També tenim l’opció de crear dife­rents calen­da­ris per tenir més endre­ça­des les nos­tres cites. En la pes­ta­nya Calen­da­ris podem veure els calen­da­ris que tenim fins ara.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_50.jpg" title="ic10m3uf2u2_50.jpg" alt="ic10m3uf2u2_50.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Per crear-ne un de nou, anem al menú Fit­xer i triem l’opció cor­res­po­nent. Tro­bem lla­vors un assis­tent que ens demana si volem un calen­dari en local o en xarxa.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_51.jpg" title="ic10m3uf2u2_51.jpg" alt="ic10m3uf2u2_51.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Per ara tre­ba­lla­rem en local i, per tant, selec­ci­o­na­rem l’opció Al meu ordi­na­dor. En la pàgina següent de l’assis­tent, podem posar un nom al calen­dari, un color per dife­ren­ciar les cites i si volem que es mos­trin les aler­tes.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_52.jpg" title="ic10m3uf2u2_52.jpg" alt="ic10m3uf2u2_52.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Ara ja podem crear cites amb el nos­tre nou calen­dari, que tin­dran el color triat. En la pes­ta­nya Calen­da­ris podem triar quins calen­da­ris volem veure mar­cant el seu nom, o des­mar­cant-lo si no el volem veure.
+</p>
+
+<p>
+Les tas­ques són sem­blants a les cites, però no han d’estar lli­ga­des per força a una data i hora, i no apa­rei­xe­ran en el calen­dari, sinó en el qua­dre de tas­ques que teniu a sota a l’esquerra:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_53.jpg" title="ic10m3uf2u2_53.jpg" alt="ic10m3uf2u2_53.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Per crear una tasca es pot fer des del menú Fit­xer i tri­ant l’opció cor­res­po­nent, o bé des de la barra d’eines amb el botó Nova tasca. Obtin­drem una fines­tra com aquesta:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_54.jpg" title="ic10m3uf2u2_54.jpg" alt="ic10m3uf2u2_54.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Com que li hem dema­nat que ens recordi una set­mana abans que hi ha aquesta tasca, en el seu moment obtin­drem la fines­tra emer­gent següent amb opci­ons per tor­nar-nos a avi­sar o per parar l’alarma.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_55.jpg" title="ic10m3uf2u2_55.jpg" alt="ic10m3uf2u2_55.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Si us hi heu fixat, La meva tasca estava din­tre de la cate­go­ria Cur­sos, que no surt per defecte. Es poden afe­gir noves cate­go­ries des d’Eines\Opci­ons, i aquí tri­a­rem la pes­ta­nya Cate­go­ries.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_56.jpg" title="ic10m3uf2u2_56.jpg" alt="ic10m3uf2u2_56.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Amb el botó Afe­geix en podrem afe­gir tan­tes com vul­guem, donant-nos la pos­si­bi­li­tat de posar-los un color (compte amb la bar­reja de colors dels calen­da­ris amb les cate­go­ries). Aques­tes cate­go­ries són uti­lit­za­bles tant per a les tas­ques com per a les cites.
+</p>
+
+<p>
+Per edi­tar una tasca, per exem­ple, per actu­a­lit­zar el per­cen­tatge fet, només cal fer-hi doble clic en el qua­dre de tas­ques. Si l’hem com­ple­tat, la mar­ca­rem amb el qua­dre que té davant del nom i es des­arà com a com­ple­tada. Podem veure les tas­ques com­ple­ta­des mar­cant l’opció que hi ha a sobre del qua­dre de tas­ques Mos­tra les tas­ques fina­lit­za­des.
+</p>
+
+</div>
+
+<h2>Opci­ons de l'agenda elec­trò­nica</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és conèi­xer les opci­ons d’un pro­gra­mari d’agenda.
+</p>
+
+<p>
+El Sun­bird té poques opci­ons de con­fi­gu­ra­ció, que veu­rem tot seguit. Per acce­dir-hi cal anar a Eines\Opci­ons.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_62.jpg" title="ic10m3uf2u2_62.jpg" alt="ic10m3uf2u2_62.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Aquí tro­bem sis pes­ta­nyes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Gene­ral. podem con­fi­gu­rar el for­mat de les dates, la durada per defecte de les cites i silen­cis, i els parà­me­tres d’actu­a­lit­za­ció dels calen­da­ris remots.</div>
+</li>
+<li class="level2"><div class="li"> Alar­mes. aques­tes opci­ons ens per­me­ten can­viar el so a repro­duir quan sona una alarma i, si cal, mos­trar un qua­dre d’alarma i les alar­mes per­du­des. També esta­blei­xen els parà­me­tres per defecte de les alar­mes.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_63.jpg" title="ic10m3uf2u2_63.jpg" alt="ic10m3uf2u2_63.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div><ul>
+<li class="level1"><div class="li"> Cate­go­ries. Ser­veix per edi­tar cate­go­ries.</div>
+</li>
+</ul>
+
+<p>
+Amb el botó Afe­geix en podrem afe­gir tan­tes com vul­guem, i donar-nos la pos­si­bi­li­tat de posar-los un color (compte amb la bar­reja de colors dels calen­da­ris amb les cate­go­ries). Aques­tes cate­go­ries són uti­lit­za­bles tant per a les tas­ques com per a les cites.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_56.jpg" title="ic10m3uf2u2_56.jpg" alt="ic10m3uf2u2_56.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div><ul>
+<li class="level1"><div class="li"> Vis­tes. Per­met para­me­trit­zar com volem veure les set­ma­nes i les hores durant el dia.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_64.jpg" title="ic10m3uf2u2_64.jpg" alt="ic10m3uf2u2_64.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div><ul>
+<li class="level1"><div class="li"> Fus horari. On selec­ci­o­nem la ciu­tat més pro­pera per esta­blir el fus horari on som.</div>
+</li>
+<li class="level2"><div class="li"> Avan­çat. Opci­ons que només heu de can­viar si sabeu exac­ta­ment el que voleu fer. Com­pre­nen la con­ne­xió del Sun­bird (proxys, etc.), l’esta­bli­ment de con­tra­se­nyes, l’actu­a­lit­za­ció de l’apli­ca­ció, i els com­ple­ments i l’encrip­ta­ció de dades i segu­re­tat.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_65.jpg" title="ic10m3uf2u2_65.jpg" alt="ic10m3uf2u2_65.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+</div>
+
+<h2>Sin­cro­nit­zar l'agenda elec­tró­nica</h2>
+<div class="level2">
+
+<p>
+L’objec­tiu d’aquesta acti­vi­tat és sin­cro­nit­zar l’agenda elec­tró­nica.
+</p>
+
+<p>
+El pri­mer que hem de saber és amb quin tipus d’arxius i ser­veis d’Inter­net podem sin­cro­nit­zar el Sun­bird. Anem a Fit­xer\Nou calen­dari i triem l’opció A la xarxa. Veiem que tenim les opci­ons següents:
+</p>
+
+<p>
+Sin­cro­nit­za­rem, doncs, amb tres for­mats/ser­veis:
+</p>
+<ul>
+<li class="level1"><div class="li"> iCa­len­dar (ICS): for­mat molt estès i com­pa­ti­ble amb Goo­gle Calen­dar.</div>
+</li>
+<li class="level2"><div class="li"> Cal­DAV: for­mat propi del Sun­bird, que per­met com­par­tir calen­da­ris amb altres usu­a­ris.</div>
+</li>
+<li class="level2"><div class="li"> WCAP: for­mat basat en Java de SUN.</div>
+</li>
+</ul>
+
+<p>
+Ara farem un exem­ple sobre com se sin­cro­nitza un calen­dari de Goo­gle Calen­dar amb Sun­bird.
+</p>
+
+<p>
+En el nos­tre Goo­gle Calen­dar tenim un cita per al 16 de febrer.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_58.jpg" title="ic10m3uf2u2_58.jpg" alt="ic10m3uf2u2_58.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+A con­ti­nu­a­ció sin­cro­nit­za­rem aquest calen­dari amb el nos­tre Sun­bird. Pri­mer hem d’anar a Con­fi­gu­ra­ció (es troba just a sota dels noms de Mis calen­da­rios). Lla­vors, fem clic a sobre del nom del calen­dari (en aquest cas, marc.​house.​profe@​gmail.​com).
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_59.jpg" title="ic10m3uf2u2_59.jpg" alt="ic10m3uf2u2_59.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Ara hem de selec­ci­o­nar dins de “Direc­ción pri­vada” l’opció ICAL.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_60.jpg" title="ic10m3uf2u2_60.jpg" alt="ic10m3uf2u2_60.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Això ens donarà una adreça que selec­ci­o­na­rem i copi­a­rem. Ara, anem al Sun­bird, a l’opció de crear un nou calen­dari, i triem l’opció en xarxa i el for­mat iCa­len­dar (ICS). A sota, engan­xem l’adreça que aca­bem de copiar de Goo­gle Calen­dar. Lla­vors, ens dema­narà posar un nom al nou calen­dari (per exem­ple, Goo­gle_1), triar un color i si volem mos­trar les aler­tes.
+</p>
+
+<p>
+Podem com­pro­var com les cites (esde­ve­ni­ments per a Goo­gle Calen­dar) han pas­sat a Sun­bird sense cap pro­blema.
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption style="width: 0px; max-width: 75%;"><span class="figuretitle">Figura</span></figcaption><img src="./a2 exercicis_files/ic10m3uf2u2_61.jpg" title="ic10m3uf2u2_61.jpg" alt="ic10m3uf2u2_61.jpg" style=""></figure>
+<div class="footfigure" style="max-width: 75%; width: 0px;"></div></div>
+<p>
+Cal tenir clar que la sin­cro­nit­za­ció, en aquest cas, és sola­ment de Goo­gle Calen­dar cap a Sun­bird, i que podem actu­a­lit­zar les dades amb l’opció Fit­xer\Actu­a­litza els calen­da­ris remots (CTRL + R). Si voleu una sin­cro­nit­za­ció bidi­rec­ci­o­nal, és a dir, que els esde­ve­ni­ments que es posen en aquell calen­dari des de Sun­bird pugin a Goo­gle Calen­dar, heu d’anar a les acti­vi­tats, on us pro­po­sem com fer-ho.
+</p>
+
+<p>
+En cas de voler sin­cro­nit­zar un PDA o dis­po­si­tiu amb IP, els pas­sos a seguir són iguals, però quan es posa l’adreça del calen­dari, lla­vors hem de fer ser­vir la IP de dis­po­si­tiu i la ruta fins a l’arxiu .ics. També hi ha la pos­si­bi­li­tat d’expor­tar un calen­dari des de qual­se­vol apli­ca­ció per a mòbils a un for­mat ade­quat per a Sun­bird i posar a l’adreça file:/(ruta).
+</p>
+
+</div>
+
+<h2>Lliurament:</h2>
+<p>Lliura un document de text amb captures de pantalla on es demostri que has seguit els passos del tutorial d'aquesta pàgina.</p>
+<p>Recorda que a totes les captures de pantalla s'ha de veure el teu nom o el teu compte de correu.</p>
+	 </article>
+
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div><div id="HyphenatorToggleBox" class="donthyphenate" style="position: absolute; top: 0px; right: 0px; margin: 0px; background-color: rgb(170, 170, 170); color: rgb(255, 255, 255); font: 6pt Arial; letter-spacing: 0.2em; padding: 3px; cursor: pointer; border-bottom-left-radius: 4px;">Hy-phen-a-tion</div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+
+
+
+</body></html>
